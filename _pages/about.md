@@ -7,9 +7,10 @@ redirect_from:
   - /about.html
 ---
 
-An electronic engineer passionate about machine learning and computational neuroscience. Also a sport fanatic and guitar nerd. Here to share my research outputs and interests, and to convey my opinions about technology, science, sport and music in my blog.
+> An electronic engineer passionate about machine learning and computational neuroscience. Also a sport fanatic and guitar nerd. Here to share my research outputs and interests, and to convey my opinions about technology, science, sport and music.
+
 ======
-*My approach to science*
+### *My approach to science*
 
 As an electronic engineer, my abition is to build revolutionary chips that are extremely energy-efficient, computationally powerful, exhibiting intelligence. To do this, I leverage machine learning and neuroscience principles. The first has demonstrated a path towards generalized intelligence, the latter how to make it human-like and energy-efficient.
 

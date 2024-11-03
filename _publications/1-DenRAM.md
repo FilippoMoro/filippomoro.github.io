@@ -3,7 +3,7 @@ title: "DenRAM: neuromorphic dendritic architecture with RRAM for efficient temp
 collection: publications
 category: manuscripts
 permalink: /publication/DenRAM
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+#excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2024-04-24
 venue: 'Nature Communications'
 paperurl: 'https://www.nature.com/articles/s41467-024-47764-w#Abs1'

@@ -3,7 +3,7 @@ title: "Mosaic: in-memory computing and routing for small-world spike-based neur
 collection: publications
 category: manuscripts
 permalink: /publication/2024-01-02-Mosaic
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
+#excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
 date: 2024-01-02
 venue: 'Nature Communications'
 slidesurl: #'http://academicpages.github.io/files/slides3.pdf'

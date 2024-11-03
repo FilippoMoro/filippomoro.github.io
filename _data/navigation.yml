@@ -23,5 +23,5 @@ main:
   - title: "CV"
     url: /files/CV_FM_2024_short.pdf
     
-  - title: "Guide"
-    url: /markdown/
+  #- title: "Guide"
+  #  url: /markdown/
