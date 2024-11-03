@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Filippo Moro / Filippo Moro"
+title                    : "About me"
 title_separator          : "-"
 name                     : &name "Filippo Moro"
-description              : &description "An electronic engineer passional about machine learning and neuroscience."
+description              : #&description "An electronic engineer passional about machine learning and neuroscience."
 url                      : https://filippomoro.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "FilippoMoro/filippomoro.github.io"
@@ -22,7 +22,7 @@ repository               : "FilippoMoro/filippomoro.github.io"
 author:
   # Biographic information
   avatar           : "LinkedIn.jpeg"
-  name             : "Your Sidebar Name"
+  name             : "Filippo Moro"
   pronouns         : # example: "she/her"  
   bio              : "An electronic engineer passional about machine learning and neuroscience."
   location         : "Zürich, CH"
