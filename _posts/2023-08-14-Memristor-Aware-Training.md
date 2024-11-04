@@ -10,7 +10,12 @@ tags:
 
 If you're here you probably already know what memristors are, but in case you don't: memristors are a novel class of electronic devices that exhibit interesting properties, among which the fact that they assume different resistance levels and are capable of holding their resistive state without requiring static power consumption. In a nutshell, they are non-volatile memories. Memristors can be made of different materials and, according to the physical principle they exploit, they are classified into the following main categories: Resistive-Random-Access-Memories (RRAMs) [1,2], and Ferroelectric-RAMs (FeRAMs) [3,4], Phase-Change-Materials (PCMs) [5], and Magnetic-RAM (MRAM) [6].
 
-![](Blog_MAT/MAT_F1.png "Different types of memristors: RRAMs feature a conductive resistive filament, FeRAMs multiple ferroelectric domains, PCM phase change materials, MRAMs magnetic domains.")
+<p align="center">
+<img src="../images/Blog_MAT/MAT_F1.png" width="750"/>
+<br>
+<em>Different types of memristors: RRAMs feature a conductive resistive filament, FeRAMs multiple ferroelectric domains, PCM phase change materials, MRAMs magnetic domains.</em>
+</p>
+
 ======
 
 ### Are memristors any good?
@@ -24,7 +29,11 @@ Yes, definitely! For the following reasons:
 
 In particular, memristors can be arranged in arrays and enable efficient In-Memory Matrix-Vector Multiplication (MVM). Weights from a matrix W can be mapped onto the conductances G in the memristive array and the inputs X is presented as voltages V at the rows of the array. Exploiting Ohm's and Kirchhoff's laws, the current at the columns I compute the MVM's output Y=WX. If you know anything about Neural Networks, you'll be aware that MVM operations are at the very core of Neural Network computation. That's where all the hype for memristive systems for Artificial Intelligence stems from!
 
-![Alt text](../images/Blog_MAT/MAT_F2.png "Efficient implementation of the Matrix-Vector-Multiplication (MVM) with a memristive array (right). Each weight in matrix W can be mapped to a conductance G in the memristive array.")
+<p align="center">
+<img src="../images/Blog_MAT/MAT_F2.png" width="750"/>
+<br>
+<em>Efficient implementation of the Matrix-Vector-Multiplication (MVM) with a memristive array (right). Each weight in matrix W can be mapped to a conductance G in the memristive array.</em>
+</p>
 ======
 
 ### Is there a catch with memristors?
@@ -34,7 +43,11 @@ The main issue of memristors is their *variability*. What does it mean? Imagine 
 
 Notice that the variability in RRAMs is in the [5–15]% interval, considering the mean resistance over the standard deviation. Other memristive technologies report similar levels of variability.
 
-![Alt text](../images/Blog_MAT/MAT_F3.png "Example of variability in RRAM devices. a) RRAM device-to-device variability after programming 4096 devices with the same programming conditions. HCS stands for High-Conductive-State. b) Measurement of cycle-to-cycle variability. The "Current" x-axis refers to the programming condition. From [7].")
+<p align="center">
+<img src="../images/Blog_MAT/MAT_F3.png" width="750"/>
+<br>
+<em>Example of variability in RRAM devices. a) RRAM device-to-device variability after programming 4096 devices with the same programming conditions. HCS stands for High-Conductive-State. b) Measurement of cycle-to-cycle variability. The "Current" x-axis refers to the programming condition. From [7].</em>
+</p>
 ======
 
 ### Is there a fix for memristors' variability?
@@ -83,7 +96,11 @@ noiser = Noisy_Inference.apply
 
 As discussed, Memristor-Aware-Training (MAT) helps Neural Networks find a configuration of weights that is resilient to their perturbation. It's very similar to the Quantization-Aware-Training technique [8], where the models' parameters are quantized during training to mitigate the performance loss due to the quantization of weights for deployment in resource-constrained (limited bit precision) hardware. In the same way, MAT makes the Network resilient to the noise and variability of memristors. Check out the effect of MAT on the very common MNIST handwritten digit recognition task, under different weight perturbation levels. In the example below, weights are perturbed both in training and in testing with Gaussian distributions with standard deviation normalized by the maximum weight magnitude (and reported as a percentage). The training noise standard deviation is 20%.
 
-![Alt text](../images/Blog_MAT/MAT_F4.png "Accuracy of a Multi-Layer Perceptron (size of 728–128–10) on MNIST under different weight perturbation magnitudes during Inference. Reference is trained without the noise injection, while MAT is trained with 20% noise injection.")
+<p align="center">
+<img src="../images/Blog_MAT/MAT_F4.png" width="600"/>
+<br>
+<em>Accuracy of a Multi-Layer Perceptron (size of 728–128–10) on MNIST under different weight perturbation magnitudes during Inference. Reference is trained without the noise injection, while MAT is trained with 20% noise injection.</em>
+</p>
 
 So how does MAT work? 
 
@@ -101,9 +118,15 @@ This exact methodology has been adopted for very successful early implementation
 
 With a similar methodology, MAT is demonstrated in simulation with a MobileNet-V2 network on the CIFAR10/100 tasks, with the following results.
 
-![Alt text](../images/Blog_MAT/MAT_F5.png)
+<p align="center">
+<img src="../images/Blog_MAT/MAT_F5.png" width="600"/>
+<br>
+</p>
 
-![Alt text](..images/Blog_MAT/MAT_F6.png)
+<p align="center">
+<img src="../images/Blog_MAT/MAT_F6.png" width="600"/>
+<br>
+</p>
 
 Notably, the technique described above is not the only one proven successful to deploy Neural Networks on memristive substrates. A solution is proposed in [11], accounting for memristive non-linearity in the training phase, while [12] introduces noise during training with Bayesian-optimized dropout layers. Possibly, these techniques could be complementary and might even be combined with the Memristor-Aware-Training to yield better results.
 This post aims at spreading knowledge about the Memristor-Aware-Training technique to promote the development of memristive systems for artificial intelligence, which offer great potential in being a disruptive technology for edge-AI applications. For this reason, the code to obtain the results shown in this post is shared on the following GitHub page, belonging to the EIS group.
