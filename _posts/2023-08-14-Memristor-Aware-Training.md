@@ -15,7 +15,7 @@ Mermistors: a controversial technology with as many praises as enemies. Memristo
 If you're here you probably already know what memristors are, but in case you don't: memristors are a novel class of electronic devices that exhibit interesting properties, among which the fact that they assume different resistance levels and are capable of holding their resistive state without requiring static power consumption. In a nutshell, they are non-volatile memories. Memristors can be made of different materials and, according to the physical principle they exploit, they are classified into the following main categories: Resistive-Random-Access-Memories (RRAMs) [1,2], and Ferroelectric-RAMs (FeRAMs) [3,4], Phase-Change-Materials (PCMs) [5], and Magnetic-RAM (MRAM) [6].
 
 <p align="center">
-<img src="https://github.com/FilippoMoro/filippomoro.github.io/tree/master/images/Blog_MAT/MAT_F1.png" width="750"/>
+<img src="../images/Blog_MAT/MAT_F1.png" width="750"/>
 <br>
 <em>Different types of memristors: RRAMs feature a conductive resistive filament, FeRAMs multiple ferroelectric domains, PCM phase change materials, MRAMs magnetic domains.</em>
 </p>
