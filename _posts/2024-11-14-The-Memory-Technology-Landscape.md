@@ -76,17 +76,17 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
 </style>
 
 Scroll through the 3 figures!
-<div class="carousel-container">
-  <div class="carousel">
-    <div class="carousel-item">
+<div id="imageCarousel" class="carousel-container">
+  <div class="carousel-container">
+    <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/SRAM_scaling_general.png" alt="Image 1" width="80%">
        <!-- <div class="caption">Caption for Image 1</div> -->
     </div>
-    <div class="carousel-item">
+    <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/SRAM_scaling_company.png" alt="Image 2" width="80%">
        <!-- <div class="caption">SRAM scaling by company</div> -->
     </div>
-       <div class="carousel-item">
+       <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/SRAM_scaling_transistor.png" alt="Image 3" width="80%">
           <!-- <div class="caption">SRAM scaling by transistor type</div> -->
     </div>
