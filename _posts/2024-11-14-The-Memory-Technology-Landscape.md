@@ -28,6 +28,53 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
   <img src="/images/Blog_Memory/SRAM_scaling.png" alt="alt text" width="1200"/>
 </p> -->
 
+<style>
+  /* Add this style block for custom styling */
+  .carousel-container {
+    position: relative;
+    max-width: 800px; /* Adjust the max-width based on your design */
+    margin: auto;
+    height: 800px; /* Set the height as needed */
+  }
+
+  .carousel-slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+
+    .carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; /* Increase the font size for bigger buttons */
+    color: #fff;
+    /*background-color: #6b3c70; /* Dark purple color */
+    border: none;
+    padding: 15px; /* Increase padding for bigger buttons */
+    cursor: pointer;
+    border-radius: 10px; /* Add some border-radius for rounded corners */
+  }
+
+  .carousel-prev {
+    left: 10px;
+  }
+  .carousel-next {
+    right: 10px;
+  }
+
+    /* Add margin to create space after the carousel */
+  .space-after-carousel {
+    margin-bottom: 30px; /* Adjust the margin as needed */
+  }
+
+</style>
+
 Scroll through the 3 figures!
 <div class="carousel-container">
   <div class="carousel">
@@ -48,11 +95,36 @@ Scroll through the 3 figures!
   <button class="next" onclick="nextSlide()">Next</button>
 </div>
 
+<script>
+  let currentSlide = 1;
+
+  function showSlide(n) {
+    const slides = document.getElementsByClassName("carousel-slide");
+    if (n > slides.length) { currentSlide = 1; }
+    if (n < 1) { currentSlide = slides.length; }
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[currentSlide - 1].style.display = "block";
+  }
+
+  function changeSlide(n) {
+    showSlide(currentSlide += n);
+  }
+
+  // Show the first slide when the page loads
+  document.addEventListener("DOMContentLoaded", function() {
+    showSlide(currentSlide);
+  });
+</script>
+
 
 This data, again, is reported in the shared [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0) and from it we can learn three main messages:
 - 1: SRAM bit-cell size has steadily decreased through the years, but it appears to have slowed down lately.
 - 2: planar CMOS technology hit a wall in the beginning of the 2010s, where FinFET technology took over, continuing in the scaling trend.
-- 2: only three companies are currently participating in the race of SRAM scaling (TSMC, Samsung, Intel).
+- 3: only three companies are currently participating in the race of SRAM scaling (TSMC, Samsung, Intel).
 
 <!-- It's important to note that in the early 2010's, performance of bulk CMOS was stagnating due to the limited electrostatic control over the channel. The semicoductor industry was quick to react and adopt a novel transistor architecture, the FinFET transitor, capable of a greater control over the channel and thus enable further scaling of feature sizes. More recently, it seems the FinFET has reached its limitations and SRAM size has slowed down. However, the industry has prepared an evolution of the FinFET transistor, the Nano-sheet-FET, which should drive the innovation of CMOS tecnology - and SRAM as well - in the coming years. -->
 
@@ -90,10 +162,36 @@ Scroll through the 2 figures!
     <div class="carousel-item">
       <img src="/images/Blog_Memory/eNVM_density_general.png" alt="Image 2" width="80%">
        <!-- <div class="caption">SRAM scaling by company</div> -->
+    </div>
   </div>
   <button class="prev" onclick="prevSlide()">Previous</button>
   <button class="next" onclick="nextSlide()">Next</button>
 </div>
+
+<script>
+  let currentSlide = 1;
+
+  function showSlide(n) {
+    const slides = document.getElementsByClassName("carousel-slide");
+    if (n > slides.length) { currentSlide = 1; }
+    if (n < 1) { currentSlide = slides.length; }
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[currentSlide - 1].style.display = "block";
+  }
+
+  function changeSlide(n) {
+    showSlide(currentSlide += n);
+  }
+
+  // Show the first slide when the page loads
+  document.addEventListener("DOMContentLoaded", function() {
+    showSlide(currentSlide);
+  });
+</script>
 
 This data, once more, is reported in the shared [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0):
 - 1: in terms of bit-cell size, eNVM is competitive with SRAM, especially RRAM and PCM.
