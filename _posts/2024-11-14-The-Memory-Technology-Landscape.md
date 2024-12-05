@@ -40,11 +40,11 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
   .carousel-slide {
     display: none;
     position: absolute;
-    width: 100%;
+    width: 70%;
   }
 
   .carousel-slide img {
-    width: 100%;
+    width: 70%;
     height: auto;
   }
 
@@ -72,7 +72,6 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
   .space-after-carousel {
     margin-bottom: 30px; /* Adjust the margin as needed */
   }
-
 </style>
 
 Scroll through the 3 figures!
@@ -120,14 +119,12 @@ Scroll through the 3 figures!
   });
 </script>
 
-
 This data, again, is reported in the shared [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0) and from it we can learn three main messages:
 - 1: SRAM bit-cell size has steadily decreased through the years, but it appears to have slowed down lately.
 - 2: planar CMOS technology hit a wall in the beginning of the 2010s, where FinFET technology took over, continuing in the scaling trend.
 - 3: only three companies are currently participating in the race of SRAM scaling (TSMC, Samsung, Intel).
 
 <!-- It's important to note that in the early 2010's, performance of bulk CMOS was stagnating due to the limited electrostatic control over the channel. The semicoductor industry was quick to react and adopt a novel transistor architecture, the FinFET transitor, capable of a greater control over the channel and thus enable further scaling of feature sizes. More recently, it seems the FinFET has reached its limitations and SRAM size has slowed down. However, the industry has prepared an evolution of the FinFET transistor, the Nano-sheet-FET, which should drive the innovation of CMOS tecnology - and SRAM as well - in the coming years. -->
-
 As technology nodes become more advanced, the investements required to participate in the silicon scaling race grow exponentially. This is why the leading edge of SRAM scaling is carried out by essentially one only company nowadays, TSMC. Samsung follows closely, and Intel seems to be lagging a little behind.
 
 > Will SRAM scaling continue?
@@ -153,13 +150,13 @@ As advancing technology nodes becomes every more expensive and technically chall
 
 <!-- <img src="/images/Blog_Memory/eNVM_scaling.png" alt="alt text" width="800"/> -->
 Scroll through the 2 figures!
-<div class="carousel-container">
-  <div class="carousel">
-    <div class="carousel-item">
+<div id="imageCarousel" class="carousel-container">
+  <div class="carousel-container">
+    <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="Image 1" width="80%">
        <!-- <div class="caption">Caption for Image 1</div> -->
     </div>
-    <div class="carousel-item">
+    <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/eNVM_density_general.png" alt="Image 2" width="80%">
        <!-- <div class="caption">SRAM scaling by company</div> -->
     </div>
