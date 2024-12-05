@@ -40,11 +40,11 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
   .carousel-slide {
     display: none;
     position: absolute;
-    width: 70%;
+    width: 85%;
   }
 
   .carousel-slide img {
-    width: 70%;
+    width: 85%;
     height: auto;
   }
 
