@@ -40,11 +40,11 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
   .carousel-slide {
     display: none;
     position: absolute;
-    width: 85%;
+    width: 90%;
   }
 
   .carousel-slide img {
-    width: 85%;
+    width: 90%;
     height: auto;
   }
 
@@ -75,7 +75,7 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
 </style>
 
 Scroll through the 3 figures!
-<div id="imageCarousel" class="carousel-container">
+<div id="Fig 1" class="carousel-container">
   <div class="carousel-container">
     <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/SRAM_scaling_general.png" alt="Image 1" width="80%">
@@ -145,12 +145,12 @@ However, the semiconductor industry still has some tricks up it sleaves, and it'
 
 ### Alternative emerging memory technology
 
-> Embedded Non Volatile Memory (eNVM)
+#### Embedded Non Volatile Memory (eNVM)
 As advancing technology nodes becomes every more expensive and technically challenging, very few companies can afford to advance the development of CMOS. This leads researches to explore novel memory devices that operate exploiting different physical phenomena. Such class of emerging memories has been talked about a lot, so how does it compare with SRAM? We'll now focus on emergin Non-Volatile-Memory (eNVM), which includes RRAM, MRAM, PCM and FeRAM. (The latter is not mature enough to be compared in the following plots).
 
 <!-- <img src="/images/Blog_Memory/eNVM_scaling.png" alt="alt text" width="800"/> -->
 Scroll through the 2 figures!
-<div id="imageCarousel" class="carousel-container">
+<div id="Fig 2" class="carousel-container">
   <div class="carousel-container">
     <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="Image 1" width="80%">
@@ -220,7 +220,7 @@ However, transistor scaling will likely hit a point of deminishing returns at so
 - eNVM is *already* in the market, as embedded memory in commercial micro-controllers [9].
 - As L3 or L4 cache memory, MRAM might evolve into a serious candidate, especially when its non-volatility can be exploited in low stand-by power contexts.
 
-> Compute-In-Memory
+#### Compute-In-Memory
 The most intreaguing domain of application for eNVM is certainly Compute-in-Memory (CIM). While SRAM-based CIM is definitely well performing, breaking the 1000Tops/W mark per macro, eNVM-based CIM is also competitive [10]. eNVM features two important characteristics that are still not fully exploited in CIM, especially in low-power applications. While SRAM is speed king and maximally efficient only at peak frequency, eNVM does not consume any static power (in theory!) and it's thus energy efficient even at low frequency, typical use-case in edge applications. Also, RRAM and PCM store multiple bits per cell (typically 3 bits): this aspect is rarely exploited as it makes the peripheral circuit design more complex (need to design a great ADC), but it might give an edge to eNVM in terms of memory density CIM.
 
 But there is an important prospect to account for: 3D-memory integration [11]. Nowadays, 3D integration is reserved to Flash memory, achieving more than 100 levels in the Back-End-of-Line and thus record-breaking memory density [12]. SRAM is very likely not scalable to 3D, as crystalline silicon cannot be deposited in the BEOL to form the 6 transistor required by SRAM. In contrast, eNVM are already BEOL-compatible! So can they scale to 3D? Yes, but it will be complicated. Some early research showed BEOL integration of RRAM and carbon-nanotube selector [13], potentially scalable to multiple 3D layers. This paves the way towards ultra-high density on-chip memory density!
