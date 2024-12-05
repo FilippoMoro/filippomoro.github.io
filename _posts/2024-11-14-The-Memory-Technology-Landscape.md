@@ -91,8 +91,8 @@ Scroll through the 3 figures!
           <!-- <div class="caption">SRAM scaling by transistor type</div> -->
     </div>
   </div>
-  <button class="prev" onclick="prevSlide()">Previous</button>
-  <button class="next" onclick="nextSlide()">Next</button>
+  <button class="carousel-prev" onclick="changeSlide(-1)">Previous</button>
+  <button class="carousel-next" onclick="changeSlide(+1)">Next</button>
 </div>
 
 <script>
@@ -164,8 +164,8 @@ Scroll through the 2 figures!
        <!-- <div class="caption">SRAM scaling by company</div> -->
     </div>
   </div>
-  <button class="prev" onclick="prevSlide()">Previous</button>
-  <button class="next" onclick="nextSlide()">Next</button>
+  <button class="carousel-prev" onclick="changeSlide(-1)">Previous</button>
+  <button class="carousel-next" onclick="changeSlide(+1)">Next</button>
 </div>
 
 <script>
