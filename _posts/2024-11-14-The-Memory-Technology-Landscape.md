@@ -10,14 +10,14 @@ tags:
   - MRAM
 ---
 
-Memory technology has become the major battleground for integrated chip's innovation. Our chips' integrated memory is ever growing and now occupies a considerable portion of commercial silicon dies. While Static-Random-Access-Memory technology dominates the on-chip memory market, an article pointed out that SRAM's scaling - fueled so far by Moore's Law - is hitting a wall. TSMC's 3nm node only provides a minor improvement (about 5%) in SRAM bitcell density compared to the 5nm node. So what is the future for on-chip memory?. Here I explore the current on-chip memory to extrapolate what the future might look like. More importantly, this article links to a [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0) where I gather data on all the memory devices featured in the plots. You can access this spreadsheet freely, and will find all the information about the given memory devices as well as a reference to the scientific paper they were featured in.
+Memory technology has become the major battleground for integrated chips innovation. Our chips' integrated memory is ever-growing and now occupies a considerable portion of commercial silicon dies. While Static-Random-Access-Memory technology dominates the on-chip memory market, an article pointed out that SRAM's scaling - fueled so far by Moore's Law - is hitting a wall. TSMC's 3nm node only provides a minor improvement (about 5%) in SRAM bitcell density compared to the 5nm node. So what is the future for on-chip memory? Here I explore the current on-chip memory to extrapolate what the future might look like. More importantly, this article links to a [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0) where I gather data on all the memory devices featured in the plots. You can access this spreadsheet freely and will find all the information about the given memory devices as well as a reference to the scientific paper they were featured in.
 
 ======
 
 ### Memory is all you need
-Memory technology has become the major battleground for integrated chip's innovation. Our chips' integrated memory is ever growing and now occupies a considerable portion of commercial silicon dies. While Static-Random-Access-Memory technology dominates the on-chip memory market, an article pointed out that SRAM's scaling - fueled so far by Moore's Law - is hitting a wall [1]. TSMC's 3nm node only provides a minor improvement (about 5%) in SRAM bitcell density compared to the 5nm node. Then what is the future for on-chip memory? Some suggest that the shift from FinFET to Nanosheet transistor technology will propell the continuation of CMOS - and SRAM as well - scaling. Others highlight that alternative solutions exist: several emerging memory cells have been developed with the aim of going beyond standard CMOS and exploit different physical phenomena to store information in memory cells. Among such innovative devices, Resistive-RAM (RRAMs) [2], Phase-Change-Memory (PCM) [3], Magnetic-RAM (MRAM) [4], Ferroelectric-RAM (FeRAM) [5], 2T-Gain-Cells [6] or eDRAM [7]. Albeit far less mature than SRAM, these devices (except for 2T-Gain-Cells and eDRAM) are non-volatile, thus promising energy efficiency, and can easily be integrated in the Back-End-of-Line (BEOL) of common CMOS processes, thus enabling high integration memory density.
+Memory technology has become the major battleground for integrated chip innovation. Our chips' integrated memory is ever-growing and now occupies a considerable portion of commercial silicon dies. While Static-Random-Access-Memory technology dominates the on-chip memory market, an article pointed out that SRAM's scaling - fueled so far by Moore's Law - is hitting a wall [1]. TSMC's 3nm node only provides a minor improvement (about 5%) in SRAM bitcell density compared to the 5nm node. Then what is the future for on-chip memory? Some suggest that the shift from FinFET to Nanosheet transistor technology will propel the continuation of CMOS - and SRAM as well - scaling. Others highlight that alternative solutions exist: several emerging memory cells have been developed with the aim of going beyond standard CMOS and exploiting different physical phenomena to store information in memory cells. Among such innovative devices, Resistive-RAM (RRAMs) [2], Phase-Change-Memory (PCM) [3], Magnetic-RAM (MRAM) [4], Ferroelectric-RAM (FeRAM) [5], 2T-Gain-Cells [6] or eDRAM [7]. Albeit far less mature than SRAM, these devices (except for 2T-Gain-Cells and eDRAM) are non-volatile, thus promising energy efficiency, and can easily be integrated into the Back-End-of-Line (BEOL) of common CMOS processes, thus enabling high integration memory density.
 
-This article offers a birdseye view of the memory technology landscape, analysing the development SRAM until the most recent nodes, and assessing the performance of the alternative emerging memory devices. Importantly, this article is inspired by this excellent review [paper](https://ieeexplore.ieee.org/abstract/document/10488872) from Prof. Shimeng Yu. I build on top of this article finding the relevant sources in the literature and providing my own opinions on the future of memory technology. You can access all the information contained in this article from this [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0): it features the scientific references and technical information to a lot of memory devices.
+This article offers a birdseye view of the memory technology landscape, analyzing the development SRAM until the most recent nodes, and assessing the performance of the alternative emerging memory devices. Importantly, this article is inspired by this excellent review [paper](https://ieeexplore.ieee.org/abstract/document/10488872) from Prof. Shimeng Yu. I build on top of this article finding the relevant sources in the literature and providing my own opinions on the future of memory technology. You can access all the information contained in this article from this [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0): it features scientific references and technical information to a lot of memory devices.
 
 ======
 
@@ -76,7 +76,7 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
 
 Scroll through the 3 figures!
 <div id="Fig 1" class="carousel-container">
-  <div class="carousel-container">
+  <div class="carousel-container-1">
     <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/SRAM_scaling_general.png" alt="Image 1" width="80%">
        <!-- <div class="caption">Caption for Image 1</div> -->
@@ -137,8 +137,9 @@ It seems like SRAM scaling is becoming harder and harder, and even TSMC flinched
 
 However, the semiconductor industry still has some tricks up it sleaves, and it's ready to play them all to assure the continuation of SRAM scaling.
 - **Nanosheet transistors**: the next generation of transistor promises higher integration density, guaranteeing the continuation of SRAM scaling
-- **Backdoor power rails**: an option mainly researhced by Intel.
-- **Complementary 3D stacked logics**: a potentially disruptive technology whereby p- and n-mos transistors can be stacked on top of each other, offering clear scaling advantages even compared to ultimate nanosheet transistors.
+- **(Backside power rails)[https://www.intel.com/content/www/us/en/newsroom/news/powervia-test-shows-industry-leading-performance.html]**: an option mainly researhced by Intel.
+- **(Forksheet Transistor)[https://spectrum.ieee.org/forksheet-transistor]**: a development of Gate-All-Around transistor enabling greater transistor density.
+- **(Complementary 3D stacked logics)[https://www.allaboutcircuits.com/news/from-finfets-to-cfets-imecs-plan-for-continued-transistor-scaling/]**: a potentially disruptive technology whereby p- and n-mos transistors can be stacked on top of each other, offering clear scaling advantages even compared to ultimate nanosheet transistors.
 
 
 ======
@@ -151,7 +152,7 @@ As advancing technology nodes becomes every more expensive and technically chall
 <!-- <img src="/images/Blog_Memory/eNVM_scaling.png" alt="alt text" width="800"/> -->
 Scroll through the 2 figures!
 <div id="Fig 2" class="carousel-container">
-  <div class="carousel-container">
+  <div class="carousel-container-2">
     <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="Image 1" width="80%">
        <!-- <div class="caption">Caption for Image 1</div> -->
