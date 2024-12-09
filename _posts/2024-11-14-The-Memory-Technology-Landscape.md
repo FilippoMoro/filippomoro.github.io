@@ -116,18 +116,39 @@ Scroll through the 3 figures!
   });
 </script>
 
+<style>
+  /* Add this style block for custom styling */
+  .carousel {
+    position: relative;
+    max-width: 800px; /* Adjust the max-width based on your design */
+    margin: auto;
+    height: 800px; /* Set the height as needed */
+  }
+
+  .carousel-slide {
+    display: none;
+    position: absolute;
+    width: 90%;
+  }
+
+  .carousel-slide img {
+    width: 90%;
+    height: auto;
+  }
+</style>
+
 <div class="carousel" id="carousel-1">
   <div class="carousel-inner">
     <!-- First figure -->
-    <div class="carousel-item active">
+    <div class="carousel-slide">
       <img src="/images/Blog_Memory/SRAM_scaling_general.png" alt="Image 1" width="80%">
     </div>
     <!-- Second figure -->
-    <div class="carousel-item">
+    <div class="carousel-slide">
       <img src="/images/Blog_Memory/SRAM_scaling_company.png" alt="Image 2" width="80%">
     </div>
     <!-- Third figure -->
-    <div class="carousel-item">
+    <div class="carousel-slide">
       <img src="/images/Blog_Memory/SRAM_scaling_transistor.png" alt="Image 3" width="80%">
     </div>
   </div>
@@ -180,11 +201,11 @@ Scroll through the 2 figures!
 <div class="carousel" id="carousel-2">
   <div class="carousel-inner">
     <!-- Fourth figure -->
-    <div class="carousel-item active">
+    <div class="carousel-slide">
       <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="F2.1" width="80%">
     </div>
     <!-- Fifth figure -->
-    <div class="carousel-item">
+    <div class="carousel-slide">
       <img src="/images/Blog_Memory/eNVM_density_general.png" alt="F2.2" width="80%">
     </div>
   </div>
