@@ -70,7 +70,7 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
 
     /* Add margin to create space after the carousel */
   .space-after-carousel {
-    margin-bottom: 30px; /* Adjust the margin as needed */
+    margin-bottom: 5px; /* Adjust the margin as needed */
   }
 </style>
 
@@ -127,7 +127,7 @@ This data, again, is reported in the shared [spreadsheet](https://docs.google.co
 <!-- It's important to note that in the early 2010's, performance of bulk CMOS was stagnating due to the limited electrostatic control over the channel. The semicoductor industry was quick to react and adopt a novel transistor architecture, the FinFET transitor, capable of a greater control over the channel and thus enable further scaling of feature sizes. More recently, it seems the FinFET has reached its limitations and SRAM size has slowed down. However, the industry has prepared an evolution of the FinFET transistor, the Nano-sheet-FET, which should drive the innovation of CMOS tecnology - and SRAM as well - in the coming years. -->
 As technology nodes become more advanced, the investements required to participate in the silicon scaling race grow exponentially. This is why the leading edge of SRAM scaling is carried out by essentially one only company nowadays, TSMC. Samsung follows closely, and Intel seems to be lagging a little behind.
 
-> Will SRAM scaling continue?
+#### Will SRAM scaling continue?
 
 It seems like SRAM scaling is becoming harder and harder, and even TSMC flinched when lunching their 3nm node, with the N3B specification only offering a 5% improve over the N5 (5nm) node [1]. 
 <!-- Also, notice that supposedly due to yield issues the N3B node has mainly been used by Apple as a customer. TSMC seems to have dismissed N3B due to these issues and moved to a N3X variant, and it's unclear whether this updated node offers any advance in terms of SRAM cell density. -->
@@ -137,10 +137,9 @@ It seems like SRAM scaling is becoming harder and harder, and even TSMC flinched
 
 However, the semiconductor industry still has some tricks up it sleaves, and it's ready to play them all to assure the continuation of SRAM scaling.
 - **Nanosheet transistors**: the next generation of transistor promises higher integration density, guaranteeing the continuation of SRAM scaling
-- **(Backside power rails)[https://www.intel.com/content/www/us/en/newsroom/news/powervia-test-shows-industry-leading-performance.html]**: an option mainly researhced by Intel.
-- **(Forksheet Transistor)[https://spectrum.ieee.org/forksheet-transistor]**: a development of Gate-All-Around transistor enabling greater transistor density.
-- **(Complementary 3D stacked logics)[https://www.allaboutcircuits.com/news/from-finfets-to-cfets-imecs-plan-for-continued-transistor-scaling/]**: a potentially disruptive technology whereby p- and n-mos transistors can be stacked on top of each other, offering clear scaling advantages even compared to ultimate nanosheet transistors.
-
+- **[Backside power rails](https://www.intel.com/content/www/us/en/newsroom/news/powervia-test-shows-industry-leading-performance.html)**: an option mainly researhced by Intel.
+- **[Forksheet Transistor](https://spectrum.ieee.org/forksheet-transistor)**: a development of Gate-All-Around transistor enabling greater transistor density.
+- **[Complementary 3D stacked logics](https://www.allaboutcircuits.com/news/from-finfets-to-cfets-imecs-plan-for-continued-transistor-scaling/)**: a potentially disruptive technology whereby p- and n-mos transistors can be stacked on top of each other, offering clear scaling advantages even compared to ultimate nanosheet transistors.
 
 ======
 
@@ -154,11 +153,11 @@ Scroll through the 2 figures!
 <div id="Fig 2" class="carousel-container">
   <div class="carousel-container-2">
     <div class="carousel-slide" style="display: block;">
-      <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="Image 1" width="80%">
+      <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="F2.1" width="80%">
        <!-- <div class="caption">Caption for Image 1</div> -->
     </div>
     <div class="carousel-slide" style="display: block;">
-      <img src="/images/Blog_Memory/eNVM_density_general.png" alt="Image 2" width="80%">
+      <img src="/images/Blog_Memory/eNVM_density_general.png" alt="F2.2" width="80%">
        <!-- <div class="caption">SRAM scaling by company</div> -->
     </div>
   </div>
@@ -166,7 +165,7 @@ Scroll through the 2 figures!
   <button class="carousel-next" onclick="changeSlide(+1)">Next</button>
 </div>
 
-<script>
+<!-- <script>
   let currentSlide = 1;
 
   function showSlide(n) {
@@ -189,7 +188,7 @@ Scroll through the 2 figures!
   document.addEventListener("DOMContentLoaded", function() {
     showSlide(currentSlide);
   });
-</script>
+</script> -->
 
 This data, once more, is reported in the shared [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0):
 - 1: in terms of bit-cell size, eNVM is competitive with SRAM, especially RRAM and PCM.
