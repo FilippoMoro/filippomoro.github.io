@@ -70,7 +70,7 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
 
     /* Add margin to create space after the carousel */
   .space-after-carousel {
-    margin-bottom: 5px; /* Adjust the margin as needed */
+    margin-bottom: 0px; /* Adjust the margin as needed */
   }
 </style>
 
@@ -90,8 +90,8 @@ Scroll through the 3 figures!
           <!-- <div class="caption">SRAM scaling by transistor type</div> -->
     </div>
   </div>
-  <button class="carousel-prev" onclick="changeSlide(-1)">Previous</button>
-  <button class="carousel-next" onclick="changeSlide(+1)">Next</button>
+  <button class="carousel-prev" data-bs-target="Fig 1" onclick="changeSlide(-1)">Previous</button>
+  <button class="carousel-next" data-bs-target="Fig 1" onclick="changeSlide(+1)">Next</button>
 </div>
 
 <script>
@@ -129,12 +129,7 @@ As technology nodes become more advanced, the investements required to participa
 
 #### Will SRAM scaling continue?
 
-It seems like SRAM scaling is becoming harder and harder, and even TSMC flinched when lunching their 3nm node, with the N3B specification only offering a 5% improve over the N5 (5nm) node [1]. 
-<!-- Also, notice that supposedly due to yield issues the N3B node has mainly been used by Apple as a customer. TSMC seems to have dismissed N3B due to these issues and moved to a N3X variant, and it's unclear whether this updated node offers any advance in terms of SRAM cell density. -->
-<!-- What are the limitations in scaling SRAM?
-- **Fin-width**?
-- **BEOL limitations**? -->
-
+It seems like SRAM scaling is becoming harder and harder, and even TSMC flinched when lunching their 3nm node, with the N3B specification only offering a 5% improve over the N5 (5nm) node [1].
 However, the semiconductor industry still has some tricks up it sleaves, and it's ready to play them all to assure the continuation of SRAM scaling.
 - **Nanosheet transistors**: the next generation of transistor promises higher integration density, guaranteeing the continuation of SRAM scaling
 - **[Backside power rails](https://www.intel.com/content/www/us/en/newsroom/news/powervia-test-shows-industry-leading-performance.html)**: an option mainly researhced by Intel.
@@ -148,7 +143,6 @@ However, the semiconductor industry still has some tricks up it sleaves, and it'
 #### Embedded Non Volatile Memory (eNVM)
 As advancing technology nodes becomes every more expensive and technically challenging, very few companies can afford to advance the development of CMOS. This leads researches to explore novel memory devices that operate exploiting different physical phenomena. Such class of emerging memories has been talked about a lot, so how does it compare with SRAM? We'll now focus on emergin Non-Volatile-Memory (eNVM), which includes RRAM, MRAM, PCM and FeRAM. (The latter is not mature enough to be compared in the following plots).
 
-<!-- <img src="/images/Blog_Memory/eNVM_scaling.png" alt="alt text" width="800"/> -->
 Scroll through the 2 figures!
 <div id="Fig 2" class="carousel-container">
   <div class="carousel-container-2">
@@ -161,34 +155,9 @@ Scroll through the 2 figures!
        <!-- <div class="caption">SRAM scaling by company</div> -->
     </div>
   </div>
-  <button class="carousel-prev" onclick="changeSlide(-1)">Previous</button>
-  <button class="carousel-next" onclick="changeSlide(+1)">Next</button>
+  <button class="carousel-prev" data-bs-target="Fig 2" onclick="changeSlide(-1)">Previous</button>
+  <button class="carousel-next" data-bs-target="Fig 2" onclick="changeSlide(+1)">Next</button>
 </div>
-
-<!-- <script>
-  let currentSlide = 1;
-
-  function showSlide(n) {
-    const slides = document.getElementsByClassName("carousel-slide");
-    if (n > slides.length) { currentSlide = 1; }
-    if (n < 1) { currentSlide = slides.length; }
-
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-
-    slides[currentSlide - 1].style.display = "block";
-  }
-
-  function changeSlide(n) {
-    showSlide(currentSlide += n);
-  }
-
-  // Show the first slide when the page loads
-  document.addEventListener("DOMContentLoaded", function() {
-    showSlide(currentSlide);
-  });
-</script> -->
 
 This data, once more, is reported in the shared [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0):
 - 1: in terms of bit-cell size, eNVM is competitive with SRAM, especially RRAM and PCM.
@@ -227,11 +196,11 @@ But there is an important prospect to account for: 3D-memory integration [11]. N
 
 
 ======
+
 Thank for reading! Please don't hesitate to provide feedbacks, you can find my contacts in the landing page of my website (provide links!). 
 Also check out the Emerging Intelligent Substrates Lab (EIS), directed by Melika Payvand. It's a cool environment where novel memristive-based architectures and neuromorphic algorithms are codesigned, leading to creative and competitive neuromorphic solutions.
 
 Visit the [EIS Lab Github](https://github.com/EIS-Hub).
-
 
 =====
 
