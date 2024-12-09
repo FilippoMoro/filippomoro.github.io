@@ -75,24 +75,21 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
 </style>
 
 Scroll through the 3 figures!
-<div id="Fig 1" class="carousel-container">
+<!-- <div id="Fig 1" class="carousel-container">
   <div class="carousel-container-1">
     <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/SRAM_scaling_general.png" alt="Image 1" width="80%">
-       <!-- <div class="caption">Caption for Image 1</div> -->
     </div>
-    <div class="carousel-slide" style="display: block;">
+      <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/SRAM_scaling_company.png" alt="Image 2" width="80%">
-       <!-- <div class="caption">SRAM scaling by company</div> -->
     </div>
-       <div class="carousel-slide" style="display: block;">
+      <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/SRAM_scaling_transistor.png" alt="Image 3" width="80%">
-          <!-- <div class="caption">SRAM scaling by transistor type</div> -->
     </div>
   </div>
   <button class="carousel-prev" data-bs-target="Fig 1" onclick="changeSlide(-1)">Previous</button>
   <button class="carousel-next" data-bs-target="Fig 1" onclick="changeSlide(+1)">Next</button>
-</div>
+</div> -->
 
 <script>
   let currentSlide = 1;
@@ -119,6 +116,29 @@ Scroll through the 3 figures!
   });
 </script>
 
+<div class="carousel" id="carousel-1">
+  <div class="carousel-inner">
+    <!-- First figure -->
+    <div class="carousel-item active">
+      <img src="/images/Blog_Memory/SRAM_scaling_general.png" alt="Image 1" width="80%">
+    </div>
+    <!-- Second figure -->
+    <div class="carousel-item">
+      <img src="/images/Blog_Memory/SRAM_scaling_company.png" alt="Image 2" width="80%">
+    </div>
+    <!-- Third figure -->
+    <div class="carousel-item">
+      <img src="/images/Blog_Memory/SRAM_scaling_transistor.png" alt="Image 3" width="80%">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
 This data, again, is reported in the shared [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0) and from it we can learn three main messages:
 - 1: SRAM bit-cell size has steadily decreased through the years, but it appears to have slowed down lately.
 - 2: planar CMOS technology hit a wall in the beginning of the 2010s, where FinFET technology took over, continuing in the scaling trend.
@@ -144,19 +164,36 @@ However, the semiconductor industry still has some tricks up it sleaves, and it'
 As advancing technology nodes becomes every more expensive and technically challenging, very few companies can afford to advance the development of CMOS. This leads researches to explore novel memory devices that operate exploiting different physical phenomena. Such class of emerging memories has been talked about a lot, so how does it compare with SRAM? We'll now focus on emergin Non-Volatile-Memory (eNVM), which includes RRAM, MRAM, PCM and FeRAM. (The latter is not mature enough to be compared in the following plots).
 
 Scroll through the 2 figures!
-<div id="Fig 2" class="carousel-container">
+<!-- <div id="Fig 2" class="carousel-container">
   <div class="carousel-container-2">
     <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="F2.1" width="80%">
-       <!-- <div class="caption">Caption for Image 1</div> -->
     </div>
     <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/eNVM_density_general.png" alt="F2.2" width="80%">
-       <!-- <div class="caption">SRAM scaling by company</div> -->
     </div>
   </div>
   <button class="carousel-prev" data-bs-target="Fig 2" onclick="changeSlide(-1)">Previous</button>
   <button class="carousel-next" data-bs-target="Fig 2" onclick="changeSlide(+1)">Next</button>
+</div> -->
+
+<div class="carousel" id="carousel-2">
+  <div class="carousel-inner">
+    <!-- Fourth figure -->
+    <div class="carousel-item active">
+      <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="F2.1" width="80%">
+    </div>
+    <!-- Fifth figure -->
+    <div class="carousel-item">
+      <img src="/images/Blog_Memory/eNVM_density_general.png" alt="F2.2" width="80%">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
 </div>
 
 This data, once more, is reported in the shared [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0):
