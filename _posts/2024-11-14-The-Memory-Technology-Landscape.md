@@ -37,11 +37,19 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
     height: 800px; /* Set the height as needed */
   }
 
-  .carousel-slide {
+  /* .carousel-slide {
     display: none;
     position: absolute;
     width: 90%;
-  }
+  } */
+
+  .carousel-slide {
+  display: none;
+}
+
+.carousel-slide.active {
+  display: block;
+}
 
   .carousel-slide img {
     width: 90%;
@@ -75,7 +83,7 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
 </style>
 
 Scroll through the 3 figures!
-<div id="Fig 1" class="carousel-container">
+<!-- <div id="Fig 1" class="carousel-container">
   <div class="carousel-container-1">
     <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/SRAM_scaling_general.png" alt="Image 1" width="80%">
@@ -89,7 +97,24 @@ Scroll through the 3 figures!
   </div>
   <button class="carousel-prev" data-bs-target="Fig 1" onclick="changeSlide(-1)">Previous</button>
   <button class="carousel-next" data-bs-target="Fig 1" onclick="changeSlide(+1)">Next</button>
+</div> -->
+
+<div id="carousel1" class="carousel-container">
+  <div class="carousel-inner">
+    <div class="carousel-slide active">
+      <img src="/images/Blog_Memory/SRAM_scaling_general.png" alt="Image 1" width="80%">
+    </div>
+    <div class="carousel-slide">
+      <img src="/images/Blog_Memory/SRAM_scaling_company.png" alt="Image 2" width="80%">
+    </div>
+    <div class="carousel-slide">
+      <img src="/images/Blog_Memory/SRAM_scaling_transistor.png" alt="Image 3" width="80%">
+    </div>
+  </div>
+  <button class="carousel-prev" onclick="changeSlide('carousel1', -1)">Previous</button>
+  <button class="carousel-next" onclick="changeSlide('carousel1', 1)">Next</button>
 </div>
+
 
 <script>
   let currentSlide = 1;
@@ -141,7 +166,7 @@ However, the semiconductor industry still has some tricks up it sleaves, and it'
 As advancing technology nodes becomes every more expensive and technically challenging, very few companies can afford to advance the development of CMOS. This leads researches to explore novel memory devices that operate exploiting different physical phenomena. Such class of emerging memories has been talked about a lot, so how does it compare with SRAM? We'll now focus on emergin Non-Volatile-Memory (eNVM), which includes RRAM, MRAM, PCM and FeRAM. (The latter is not mature enough to be compared in the following plots).
 
 Scroll through the 2 figures!
-<div id="Fig 2" class="carousel-container">
+<!-- <div id="Fig 2" class="carousel-container">
   <div class="carousel-container-2">
     <div class="carousel-slide" style="display: block;">
       <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="F2.1" width="80%">
@@ -152,6 +177,19 @@ Scroll through the 2 figures!
   </div>
   <button class="carousel-prev" data-bs-target="Fig 2" onclick="changeSlide(-1)">Previous</button>
   <button class="carousel-next" data-bs-target="Fig 2" onclick="changeSlide(+1)">Next</button>
+</div> -->
+
+<div id="carousel2" class="carousel-container">
+  <div class="carousel-inner">
+    <div class="carousel-slide active">
+      <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="F2.1" width="80%">
+    </div>
+    <div class="carousel-slide">
+      <img src="/images/Blog_Memory/eNVM_density_general.png" alt="F2.2" width="80%">
+    </div>
+  </div>
+  <button class="carousel-prev" onclick="changeSlide('carousel1', -1)">Previous</button>
+  <button class="carousel-next" onclick="changeSlide('carousel1', 1)">Next</button>
 </div>
 
 This data, once more, is reported in the shared [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0):
@@ -227,3 +265,38 @@ Visit the [EIS Lab Github](https://github.com/EIS-Hub).
 [12] Kim, Bvunarvul, et al. "28.2 A High-Performance 1Tb 3b/Cell 3D-NAND Flash with a 194MB/s Write Throughput on over 300 Layers" 2023 IEEE International Solid-State Circuits Conference (ISSCC). IEEE, 2023.
 
 [13] Srimani, Tathagata, et al. "Foundry monolithic 3D BEOL transistor+ memory stack: Iso-performance and Iso-footprint BEOL carbon nanotube FET+ RRAM vs. FEOL silicon FET+ RRAM." 2023 IEEE Symposium on VLSI Technology and Circuits (VLSI Technology and Circuits). IEEE, 2023.
+
+
+<script>
+  // Keep track of slide indices for each carousel
+  const carousels = {
+    carousel1: 0,
+    carousel2: 0,
+  };
+
+  function showSlide(carouselId, indexChange) {
+    const carousel = document.getElementById(carouselId);
+    const slides = carousel.querySelectorAll(".carousel-slide");
+    let current = carousels[carouselId];
+
+    // Update index with wrap-around
+    current = (current + indexChange + slides.length) % slides.length;
+    carousels[carouselId] = current;
+
+    slides.forEach((slide, idx) => {
+      slide.style.display = idx === current ? "block" : "none";
+    });
+  }
+
+  // Hook for buttons
+  function changeSlide(carouselId, delta) {
+    showSlide(carouselId, delta);
+  }
+
+  // On load, show the first slide for each carousel
+  document.addEventListener("DOMContentLoaded", function() {
+    for (const id in carousels) {
+      showSlide(id, 0);
+    }
+  });
+</script>
