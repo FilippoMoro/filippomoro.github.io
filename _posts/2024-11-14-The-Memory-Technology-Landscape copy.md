@@ -94,7 +94,7 @@ Scroll through the 3 figures!
   <button class="carousel-next" data-bs-target="Fig 1" onclick="changeSlide(+1)">Next</button>
 </div> -->
 
-<div id="carousel1" class="carousel-container">
+<!-- <div id="carousel1" class="carousel-container">
   <div class="carousel-slide active">
     <img src="/images/Blog_Memory/SRAM_scaling_general.png" alt="Image 1">
   </div>
@@ -106,7 +106,28 @@ Scroll through the 3 figures!
   </div>
   <button class="carousel-prev" onclick="changeSlide('carousel1', -1)">Previous</button>
   <button class="carousel-next" onclick="changeSlide('carousel1', 1)">Next</button>
+</div> -->
+
+<div id="carousel1" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="/images/Blog_MAT/MAT_F1.png" alt="Image 1">
+    </div>
+    <div class="item">
+      <img src="/images/Blog_MAT/MAT_F2.png" alt="Image 2">
+    </div>
+    <div class="item">
+      <img src="/images/Blog_MAT/MAT_F3.png" alt="Image 3">
+    </div>
+  </div>
+  <a class="left carousel-control" href="#carousel1" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel1" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
 </div>
+
 
 
 <!-- <script>
@@ -159,7 +180,25 @@ However, the semiconductor industry still has some tricks up it sleaves, and it'
 As advancing technology nodes becomes every more expensive and technically challenging, very few companies can afford to advance the development of CMOS. This leads researches to explore novel memory devices that operate exploiting different physical phenomena. Such class of emerging memories has been talked about a lot, so how does it compare with SRAM? We'll now focus on emergin Non-Volatile-Memory (eNVM), which includes RRAM, MRAM, PCM and FeRAM. (The latter is not mature enough to be compared in the following plots).
 
 Scroll through the 2 figures!
-<div id="carousel2" class="carousel-container">
+<div id="carousel2" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="/images/Blog_MAT/MAT_F5.png" alt="Image 5">
+    </div>
+    <div class="item">
+      <img src="/images/Blog_MAT/MAT_F6.png" alt="Image 6">
+    </div>
+  </div>
+  <a class="left carousel-control" href="#carousel2" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel2" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+
+<!-- <div id="carousel2" class="carousel-container">
   <div class="carousel-slide active">
     <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="F2.1">
   </div>
@@ -168,7 +207,7 @@ Scroll through the 2 figures!
   </div>
   <button class="carousel-prev" onclick="changeSlide('carousel2', -1)">Previous</button>
   <button class="carousel-next" onclick="changeSlide('carousel2', 1)">Next</button>
-</div>
+</div> -->
 
 <!-- <div id="Fig 2" class="carousel-container">
   <div class="carousel-container-2">
