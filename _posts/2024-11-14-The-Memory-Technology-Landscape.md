@@ -29,58 +29,53 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
 </p> -->
 
 <style>
-  /* Add this style block for custom styling */
   .carousel-container {
     position: relative;
-    max-width: 800px; /* Adjust the max-width based on your design */
+    max-width: 800px;
     margin: auto;
-    height: 800px; /* Set the height as needed */
+    height: auto;
+    margin-bottom: 40px;
   }
 
-  /* .carousel-slide {
-    display: none;
-    position: absolute;
-    width: 90%;
-  } */
-
   .carousel-slide {
-  display: none;
-}
-
-.carousel-slide.active {
-  display: block;
-}
+    display: none;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
 
   .carousel-slide img {
     width: 90%;
     height: auto;
   }
 
-    .carousel-prev, .carousel-next {
+  .carousel-prev, .carousel-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 20px; /* Increase the font size for bigger buttons */
+    font-size: 20px;
     color: #fff;
-    /*background-color: #6b3c70; /* Dark purple color */
+    background-color: rgba(0,0,0,0.5);
     border: none;
-    padding: 15px; /* Increase padding for bigger buttons */
+    padding: 10px 15px;
     cursor: pointer;
-    border-radius: 10px; /* Add some border-radius for rounded corners */
+    border-radius: 10px;
+    z-index: 1;
   }
 
   .carousel-prev {
     left: 10px;
   }
+
   .carousel-next {
     right: 10px;
   }
 
-    /* Add margin to create space after the carousel */
-  .space-after-carousel {
-    margin-bottom: 0px; /* Adjust the margin as needed */
+  .carousel-slide.active {
+    display: block;
   }
 </style>
+
 
 Scroll through the 3 figures!
 <!-- <div id="Fig 1" class="carousel-container">
@@ -100,23 +95,21 @@ Scroll through the 3 figures!
 </div> -->
 
 <div id="carousel1" class="carousel-container">
-  <div class="carousel-inner">
-    <div class="carousel-slide active">
-      <img src="/images/Blog_Memory/SRAM_scaling_general.png" alt="Image 1" width="80%">
-    </div>
-    <div class="carousel-slide">
-      <img src="/images/Blog_Memory/SRAM_scaling_company.png" alt="Image 2" width="80%">
-    </div>
-    <div class="carousel-slide">
-      <img src="/images/Blog_Memory/SRAM_scaling_transistor.png" alt="Image 3" width="80%">
-    </div>
+  <div class="carousel-slide active">
+    <img src="/images/Blog_Memory/SRAM_scaling_general.png" alt="Image 1">
+  </div>
+  <div class="carousel-slide">
+    <img src="/images/Blog_Memory/SRAM_scaling_company.png" alt="Image 2">
+  </div>
+  <div class="carousel-slide">
+    <img src="/images/Blog_Memory/SRAM_scaling_transistor.png" alt="Image 3">
   </div>
   <button class="carousel-prev" onclick="changeSlide('carousel1', -1)">Previous</button>
   <button class="carousel-next" onclick="changeSlide('carousel1', 1)">Next</button>
 </div>
 
 
-<script>
+<!-- <script>
   let currentSlide = 1;
 
   function showSlide(n) {
@@ -139,7 +132,7 @@ Scroll through the 3 figures!
   document.addEventListener("DOMContentLoaded", function() {
     showSlide(currentSlide);
   });
-</script>
+</script> -->
 
 This data, again, is reported in the shared [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0) and from it we can learn three main messages:
 - 1: SRAM bit-cell size has steadily decreased through the years, but it appears to have slowed down lately.
@@ -166,6 +159,17 @@ However, the semiconductor industry still has some tricks up it sleaves, and it'
 As advancing technology nodes becomes every more expensive and technically challenging, very few companies can afford to advance the development of CMOS. This leads researches to explore novel memory devices that operate exploiting different physical phenomena. Such class of emerging memories has been talked about a lot, so how does it compare with SRAM? We'll now focus on emergin Non-Volatile-Memory (eNVM), which includes RRAM, MRAM, PCM and FeRAM. (The latter is not mature enough to be compared in the following plots).
 
 Scroll through the 2 figures!
+<div id="carousel2" class="carousel-container">
+  <div class="carousel-slide active">
+    <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="F2.1">
+  </div>
+  <div class="carousel-slide">
+    <img src="/images/Blog_Memory/eNVM_density_general.png" alt="F2.2">
+  </div>
+  <button class="carousel-prev" onclick="changeSlide('carousel2', -1)">Previous</button>
+  <button class="carousel-next" onclick="changeSlide('carousel2', 1)">Next</button>
+</div>
+
 <!-- <div id="Fig 2" class="carousel-container">
   <div class="carousel-container-2">
     <div class="carousel-slide" style="display: block;">
@@ -179,18 +183,6 @@ Scroll through the 2 figures!
   <button class="carousel-next" data-bs-target="Fig 2" onclick="changeSlide(+1)">Next</button>
 </div> -->
 
-<div id="carousel2" class="carousel-container">
-  <div class="carousel-inner">
-    <div class="carousel-slide active">
-      <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="F2.1" width="80%">
-    </div>
-    <div class="carousel-slide">
-      <img src="/images/Blog_Memory/eNVM_density_general.png" alt="F2.2" width="80%">
-    </div>
-  </div>
-  <button class="carousel-prev" onclick="changeSlide('carousel2', -1)">Previous</button>
-  <button class="carousel-next" onclick="changeSlide('carousel2', 1)">Next</button>
-</div>
 
 This data, once more, is reported in the shared [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0):
 - 1: in terms of bit-cell size, eNVM is competitive with SRAM, especially RRAM and PCM.
@@ -268,35 +260,34 @@ Visit the [EIS Lab Github](https://github.com/EIS-Hub).
 
 
 <script>
-  // Keep track of slide indices for each carousel
-  const carousels = {
-    carousel1: 0,
-    carousel2: 0,
-  };
+  const carousels = {};
 
   function showSlide(carouselId, indexChange) {
-    const carousel = document.getElementById(carouselId);
-    const slides = carousel.querySelectorAll(".carousel-slide");
-    let current = carousels[carouselId];
+    const container = document.getElementById(carouselId);
+    const slides = container.getElementsByClassName("carousel-slide");
 
-    // Update index with wrap-around
+    if (!(carouselId in carousels)) {
+      carousels[carouselId] = 0;
+    }
+
+    let current = carousels[carouselId];
     current = (current + indexChange + slides.length) % slides.length;
     carousels[carouselId] = current;
 
-    slides.forEach((slide, idx) => {
-      slide.style.display = idx === current ? "block" : "none";
-    });
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+    }
+
+    slides[current].classList.add("active");
   }
 
-  // Hook for buttons
+  // Initialize all carousels
+  document.addEventListener("DOMContentLoaded", function() {
+    const carouselIds = ["carousel1", "carousel2"];
+    carouselIds.forEach(id => showSlide(id, 0));
+  });
+
   function changeSlide(carouselId, delta) {
     showSlide(carouselId, delta);
   }
-
-  // On load, show the first slide for each carousel
-  document.addEventListener("DOMContentLoaded", function() {
-    for (const id in carousels) {
-      showSlide(id, 0);
-    }
-  });
 </script>
