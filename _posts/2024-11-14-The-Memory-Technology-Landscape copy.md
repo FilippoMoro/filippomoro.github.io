@@ -111,13 +111,13 @@ Scroll through the 3 figures!
 <div id="carousel1" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="item active">
-      <img src="/images/Blog_MAT/MAT_F1.png" alt="Image 1">
+      <img src="/images/Blog_Memory/SRAM_scaling_general.png" alt="Image 1">
     </div>
     <div class="item">
-      <img src="/images/Blog_MAT/MAT_F2.png" alt="Image 2">
+      <img src="/images/Blog_Memory/SRAM_scaling_company.png" alt="Image 2">
     </div>
     <div class="item">
-      <img src="/images/Blog_MAT/MAT_F3.png" alt="Image 3">
+      <img src="/images/Blog_Memory/SRAM_scaling_transistor.png" alt="Image 3">
     </div>
   </div>
   <a class="left carousel-control" href="#carousel1" data-slide="prev">
@@ -183,10 +183,10 @@ Scroll through the 2 figures!
 <div id="carousel2" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="item active">
-      <img src="/images/Blog_MAT/MAT_F5.png" alt="Image 5">
+      <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="Image 5">
     </div>
     <div class="item">
-      <img src="/images/Blog_MAT/MAT_F6.png" alt="Image 6">
+      <img src="/images/Blog_Memory/eNVM_density_general.png" alt="Image 6">
     </div>
   </div>
   <a class="left carousel-control" href="#carousel2" data-slide="prev">
