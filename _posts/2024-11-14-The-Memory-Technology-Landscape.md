@@ -188,8 +188,8 @@ Scroll through the 2 figures!
       <img src="/images/Blog_Memory/eNVM_density_general.png" alt="F2.2" width="80%">
     </div>
   </div>
-  <button class="carousel-prev" onclick="changeSlide('carousel1', -1)">Previous</button>
-  <button class="carousel-next" onclick="changeSlide('carousel1', 1)">Next</button>
+  <button class="carousel-prev" onclick="changeSlide('carousel2', -1)">Previous</button>
+  <button class="carousel-next" onclick="changeSlide('carousel2', 1)">Next</button>
 </div>
 
 This data, once more, is reported in the shared [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0):
