@@ -75,22 +75,6 @@ Pushed by the advances of transistor technology, SRAM performance improved at an
 </style>
 
 Scroll through the 3 figures!
-<!-- <div id="Fig 1" class="carousel-container">
-  <div class="carousel-container-1">
-    <div class="carousel-slide" style="display: block;">
-      <img src="/images/Blog_Memory/SRAM_scaling_general.png" alt="Image 1" width="80%">
-    </div>
-      <div class="carousel-slide" style="display: block;">
-      <img src="/images/Blog_Memory/SRAM_scaling_company.png" alt="Image 2" width="80%">
-    </div>
-      <div class="carousel-slide" style="display: block;">
-      <img src="/images/Blog_Memory/SRAM_scaling_transistor.png" alt="Image 3" width="80%">
-    </div>
-  </div>
-  <button class="carousel-prev" data-bs-target="Fig 1" onclick="changeSlide(-1)">Previous</button>
-  <button class="carousel-next" data-bs-target="Fig 1" onclick="changeSlide(+1)">Next</button>
-</div> -->
-
 <div id="Fig1" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="item active">
@@ -161,20 +145,6 @@ However, the semiconductor industry still has some tricks up it sleaves, and it'
 As advancing technology nodes becomes every more expensive and technically challenging, very few companies can afford to advance the development of CMOS. This leads researches to explore novel memory devices that operate exploiting different physical phenomena. Such class of emerging memories has been talked about a lot, so how does it compare with SRAM? We'll now focus on emergin Non-Volatile-Memory (eNVM), which includes RRAM, MRAM, PCM and FeRAM. (The latter is not mature enough to be compared in the following plots).
 
 Scroll through the 2 figures!
-<!-- <div id="Fig 2" class="carousel-container">
-  <div class="carousel-container-2">
-    <div class="carousel-slide" style="display: block;">
-      <img src="/images/Blog_Memory/eNVM_scaling_general.png" alt="F2.1" width="80%">
-    </div>
-    <div class="carousel-slide" style="display: block;">
-      <img src="/images/Blog_Memory/eNVM_density_general.png" alt="F2.2" width="80%">
-    </div>
-  </div>
-  <button class="carousel-prev" data-bs-target="Fig 2" onclick="changeSlide(-1)">Previous</button>
-  <button class="carousel-next" data-bs-target="Fig 2" onclick="changeSlide(+1)">Next</button>
-</div> -->
-
-
 <div id="carousel2" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="item active">
