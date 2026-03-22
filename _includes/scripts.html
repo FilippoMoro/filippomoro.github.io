@@ -1,3 +1,35 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
+<script>
+  (function () {
+    var key = "site-theme";
+    var root = document.documentElement;
+    var toggle = document.getElementById("theme-toggle");
+
+    if (!toggle) return;
+
+    var setTheme = function (theme, persist) {
+      root.setAttribute("data-theme", theme);
+      root.style.colorScheme = theme;
+      if (persist) {
+        try {
+          localStorage.setItem(key, theme);
+        } catch (e) {}
+      }
+
+      var nextTheme = theme === "dark" ? "light" : "dark";
+      toggle.textContent = nextTheme === "dark" ? "Dark mode" : "Light mode";
+      toggle.setAttribute("aria-pressed", String(theme === "dark"));
+    };
+
+    var current = root.getAttribute("data-theme") || "light";
+    setTheme(current, false);
+
+    toggle.addEventListener("click", function (event) {
+      event.preventDefault();
+      var active = root.getAttribute("data-theme") || "light";
+      setTheme(active === "dark" ? "light" : "dark", true);
+    });
+  })();
+</script>
 
 {% include analytics.html %}

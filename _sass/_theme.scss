@@ -1,0 +1,90 @@
+/* ==========================================================================
+   THEME TOGGLE
+   ========================================================================== */
+
+.masthead__menu-item--theme a {
+  margin-left: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid $border-color;
+  border-radius: 999px;
+  line-height: 1.2;
+}
+
+.greedy-nav .visible-links .masthead__menu-item--theme a:before {
+  display: none;
+}
+
+.masthead__menu-item--theme a:focus {
+  outline: 2px solid $info-color;
+  outline-offset: 2px;
+}
+
+html[data-theme="dark"] body {
+  background-color: #12161d;
+  color: #e8edf3;
+}
+
+html[data-theme="dark"] a {
+  color: #83c9ff;
+}
+
+html[data-theme="dark"] .masthead {
+  background: #181f29;
+  border-bottom-color: #2f3a48;
+}
+
+html[data-theme="dark"] .greedy-nav {
+  background: #181f29;
+}
+
+html[data-theme="dark"] .greedy-nav a {
+  color: #d9e2ee;
+}
+
+html[data-theme="dark"] .greedy-nav .visible-links a:hover {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .greedy-nav .hidden-links {
+  background: #1d2530;
+  border-color: #3a4758;
+}
+
+html[data-theme="dark"] .greedy-nav .hidden-links a:hover {
+  background: #2a3644;
+}
+
+html[data-theme="dark"] .page__content h2,
+html[data-theme="dark"] hr,
+html[data-theme="dark"] .page__share,
+html[data-theme="dark"] .page__comments-title,
+html[data-theme="dark"] .page__content + .pagination,
+html[data-theme="dark"] .page__meta + .pagination,
+html[data-theme="dark"] .page__share + .pagination,
+html[data-theme="dark"] .page__comments + .pagination {
+  border-color: #334152;
+}
+
+html[data-theme="dark"] p > code,
+html[data-theme="dark"] a > code,
+html[data-theme="dark"] li > code,
+html[data-theme="dark"] figcaption > code,
+html[data-theme="dark"] td > code {
+  background: #1d2530;
+  border-color: #3a4758;
+}
+
+html[data-theme="dark"] .page__taxonomy-item {
+  border-color: #3a4758;
+}
+
+html[data-theme="dark"] .page__comments-form {
+  background: #1d2530;
+}
+
+html[data-theme="dark"] .page__footer {
+  background-color: #181f29;
+  border-top-color: #2f3a48;
+  color: #9fafc0;
+}
+
