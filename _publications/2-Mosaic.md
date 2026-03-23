@@ -10,3 +10,5 @@ slidesurl: #'http://academicpages.github.io/files/slides3.pdf'
 paperurl: 'https://www.nature.com/articles/s41467-023-44365-x'
 citation: 'M. Payvand et al. (2024). &quot;Mosaic: in-memory computing and routing for small-world spike-based neuromorphic systems.&quot; <i>Nature Communications</i>. 1(3).'
 ---
+
+---
