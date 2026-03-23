@@ -35,9 +35,12 @@ We asked two simple questions:
 1. How do you *objectively assess* the current importance of different disciplines in the neuromorphic field?
 2. If you could *change* the field, how much importance would you assign to each discipline?
 
-<object data="/images/Blog_Cosyne2026/Survey_Neuroscience.pdf" type="application/pdf" width="100%" height="620">
-  <p>Survey figure preview not available in this browser. Open it directly <a href="/images/Blog_Cosyne2026/Survey_Neuroscience.pdf">here</a>.</p>
-</object>
+<p align="center">
+  <img src="/images/Blog_Cosyne2026/Survey_Neuroscience.jpg" width="100%" alt="Survey results on the perceived importance of disciplines in neuromorphic engineering"/>
+</p>
+<p align="center">
+  <em>PDF version available <a href="/images/Blog_Cosyne2026/Survey_Neuroscience.pdf">here</a>.</em>
+</p>
 
 The result was striking: **neuroscience is the discipline people most want to see more of**. Even more than machine learning and computer science. The community sees biological inspiration as underutilised — not as something to be left behind.
 
@@ -49,9 +52,12 @@ This raises a natural follow-up question: *how* should we draw inspiration from 
 
 Not all biological inspiration is created equal. I find it useful to distinguish between three levels, which map onto different parts of the stack — from devices and circuits all the way up to applications and algorithms.
 
-<object data="/images/Blog_Cosyne2026/Three_Level_BioInspiration.pdf" type="application/pdf" width="80%" height="620">
-  <p>Figure preview not available in this browser. Open it directly <a href="/images/Blog_Cosyne2026/Three_Level_BioInspiration.pdf">here</a>.</p>
-</object>
+<p align="center">
+  <img src="/images/Blog_Cosyne2026/Three_Level_BioInspiration.jpg" width="80%" alt="Three levels of biological inspiration: mechanical, system, and behavioral"/>
+</p>
+<p align="center">
+  <em>PDF version available <a href="/images/Blog_Cosyne2026/Three_Level_BioInspiration.pdf">here</a>.</em>
+</p>
 
 ### 1. Mechanical Level
 
