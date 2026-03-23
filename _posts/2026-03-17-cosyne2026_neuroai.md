@@ -7,7 +7,7 @@ venue: "Testing Institute of America 2014 Annual Conference"
 date: 2026-03-21
 location: "Lisbon, PT"
 tags: [neuromorphic, neuroai, cosyne, spiking-neural-networks, biological-inspiration]
-layout: post
+layout: single
 ---
 
 Artificial Intelligence is advancing at ever increasing speed, learning from massive data and running in huge datacenters. Modern AI does not look much like biological intelligence. So what role does neuroscience play in the context of AI? This question was at the center of a recent workshop organized at Cosyne 2026: "Biologically-Inspired Artificial Intelligence". Here I show my perspective on this intriguing research question, structuring inspiration from biology into three distinct levels: mechanical, system-level, and behavioral. As a neuromorphic engineer, I am used to working at the mechanical level, replicating the biophysics of neurons and synapses with electronics. However, I see great opportunities to work at a higher level of abstraction by drawing inspiration from biological computation. This hints at the unification of NeuroAI with Neuromorphic Computing.
