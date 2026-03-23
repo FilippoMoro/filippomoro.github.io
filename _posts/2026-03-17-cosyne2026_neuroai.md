@@ -28,7 +28,7 @@ As a neuromorphic engineer, I share some of these same tensions. Neuromorphic co
 
 ## What Does the Neuromorphic Community Actually Want?
 
-To get a clearer picture, my colleagues [Matteo Saponati](https://matteosaponati.github.io/), [Melika Payvand](https://scholar.google.com/citations?user=O_fNxzIAAAAJ), and [Laura Kriener](https://scholar.google.com/citations?user=1X7XZUIAAAAJ) and I distributed a survey to the neuromorphic community, inspired by a similar effort in NeuroAI by [Luppi et al. (2024)](https://www.nature.com/articles/s41467-024-46631-y), guided by [Jascha Achterber](https://www.jachterberg.com/), one of the Cosyne NeuroAI workshop organizers.
+To get a clearer picture, my colleagues [Matteo Saponati](https://matteosaponati.github.io/), [Melika Payvand](https://scholar.google.com/citations?user=O_fNxzIAAAAJ), and [Laura Kriener](https://scholar.google.com/citations?user=1X7XZUIAAAAJ) and I distributed a [survey](https://www.linkedin.com/posts/matteosaponati_neuromorphic-questionnaire-share-7318228604117508096-AVkk?utm_source=share&utm_medium=member_desktop&rcm=ACoAACj8vWkBo36oJfWRUh4_khoynkT9PwW-gaA) to the neuromorphic community, inspired by a similar effort in NeuroAI by [Luppi et al. (2024)](https://www.nature.com/articles/s41467-024-46631-y), guided by [Jascha Achterber](https://www.jachterberg.com/), one of the Cosyne NeuroAI workshop organizers.
 
 We asked two simple questions:
 
@@ -39,7 +39,7 @@ We asked two simple questions:
   <img src="/images/Blog_Cosyne2026/Survey_Neuroscience.jpg" width="100%" alt="Survey results on the perceived importance of disciplines in neuromorphic engineering"/>
 </p>
 <p align="center">
-  <em>PDF version available <a href="/images/Blog_Cosyne2026/Survey_Neuroscience.pdf">here</a>.</em>
+  <em>Results from a survey distributed to the Neuromorphic Engineering community</a>.</em>
 </p>
 
 The result was striking: **neuroscience is the discipline people most want to see more of**. Even more than machine learning and computer science. The community sees biological inspiration as underutilised — not as something to be left behind.
@@ -53,10 +53,10 @@ This raises a natural follow-up question: *how* should we draw inspiration from 
 Not all biological inspiration is created equal. I find it useful to distinguish between three levels, which map onto different parts of the stack — from devices and circuits all the way up to applications and algorithms.
 
 <p align="center">
-  <img src="/images/Blog_Cosyne2026/Three_Level_BioInspiration.jpg" width="80%" alt="Three levels of biological inspiration: mechanical, system, and behavioral"/>
+  <img src="/images/Blog_Cosyne2026/Three_Level_BioInspiration.jpg" width="70%" alt="Three levels of biological inspiration: mechanical, system, and behavioral"/>
 </p>
 <p align="center">
-  <em>PDF version available <a href="/images/Blog_Cosyne2026/Three_Level_BioInspiration.pdf">here</a>.</em>
+  <em>Curtesy of Melika Payvand</a>.</em>
 </p>
 
 ### 1. Mechanical Level
@@ -89,17 +89,31 @@ This is exactly the direction my lab — the [Emergent Intelligent Substrates (E
 
 ### Mechanical Level: Dendritic Delays
 
-Dendrites are not just passive cables. They exhibit a rich repertoire of computational behaviors, one of which is the **propagation delay** of pre-synaptic stimuli as they travel toward the soma. This delay is a form of temporal memory built directly into the morphology of the neuron.
+Dendrites exhibit a rich repertoire of computational primitives, one of which is the **propagation delay** of pre-synaptic stimuli as they travel toward the soma. This delay is a form of temporal memory built directly into the morphology of the neuron.
+
+<p align="center">
+  <img src="/images/Blog_Cosyne2026/DenRAM.png" width="90%" alt="DenRAM - Dendritic architecture with delays"/>
+</p>
+<p align="center">
+  <em>DenRAM mimics dendritic arbors with synaptic elements that delay and weigh input spikes, converging to an output Leaky-Integrate-and-Fire neuron.</a>.</em>
+</p>
 
 In **DenRAM** ([D'Agostino, Moro et al., *Nature Communications* 2024](https://www.nature.com/articles/s41467-024-57108-x)), we built a neuromorphic hardware architecture that uses Resistive RAM (RRAM) to implement dendritic delays with ultra-low power consumption. Delay-based spiking networks turn out to be significantly more efficient than recurrent models: we demonstrated a **5× reduction in power** and up to a **35× reduction in memory footprint** on ECG anomaly detection and keyword spotting benchmarks.
 
 One limitation of DenRAM was that we did not train the delays — we fixed them. This motivated **DelGrad** ([Göltz, Weber, Kriener et al., *Nature Communications* 2025](https://www.nature.com/articles/s41467-025-57628-w)), an algorithm that derives exact, event-based gradients for both synaptic weights *and* delays in spiking networks. DelGrad is compatible with LIF neurons and has been validated on neuromorphic hardware (BrainScaleS), where training axonal delays reduces test error meaningfully even under the noise of analog hardware.
 
-Together, DenRAM and DelGrad make the case that the mechanical richness of dendrites — specifically, their temporal structure — is a genuine computational resource, not just biological decoration.
+Together, DenRAM and DelGrad make the case that the mechanical richness of dendrites — specifically, their temporal structure — is a powerful computational resource.
 
 ### System Level: Heterogeneous Memory, Temporal Hierarchy, and Neurogenesis
 
-Moving up the hierarchy, we have been asking how biological system-level principles can improve artificial networks trained with standard methods.
+Moving up the hierarchy, we have been working on how biological system-level principles can improve artificial networks trained with backpropagation.
+
+<p align="center">
+  <img src="/images/Blog_Cosyne2026/System_level.png" width="90%" alt="System-level of biological inspiration"/>
+</p>
+<p align="center">
+  <em>In the system-level of biological inspuration, we leverage machine-learning computational mechanisms in conjunction with high-level features of biological computations.</a>.</em>
+</p>
 
 **mGRADE** ([Torchet et al., *arXiv* 2025](https://arxiv.org/abs/2507.01829)) combines two ideas: the minimal gated recurrent unit (minGRU) for processing slow temporal dynamics, and dilated convolutions with learnable spacings (DCLS) for capturing fast temporal features. The result is a deep recurrent network with **heterogeneous memory** — inspired by the fact that brains exhibit heterogeneous strategies for memory formation. mGRADE achieves state-of-the-art performance on the Long Range Arena benchmark and on raw-audio keyword spotting, while being the only architecture in its class small enough to fit on common microcontrollers.
 
@@ -122,5 +136,3 @@ The question is how to make it happen. I hope that conversations like the one we
 ---
 
 *Filippo Moro is a Postdoc in the [EIS Lab](https://esl.epfl.ch/research/the-eis-lab/) at UZH and ETH Zurich, led by Prof. Melika Payvand. His research sits at the intersection of neuromorphic hardware, spiking neural networks, and biologically-inspired machine learning.*
-
-*Slides from the Cosyne 2026 talk are available [here](#).*
