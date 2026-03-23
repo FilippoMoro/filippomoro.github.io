@@ -3,7 +3,6 @@ title: "Three Levels of Biological Inspiration: Bridging NeuroAI and Neuromorphi
 collection: talks
 type: "Conference proceedings talk"
 permalink: /talks/2026-03-17-Cosyne2026_NeuroAI
-venue: "Testing Institute of America 2014 Annual Conference"
 date: 2026-03-21
 location: "Lisbon, PT"
 tags: [neuromorphic, neuroai, cosyne, spiking-neural-networks, biological-inspiration]
