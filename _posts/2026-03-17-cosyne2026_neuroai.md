@@ -25,31 +25,9 @@ As a neuromorphic engineer, I share some of these same tensions. Neuromorphic co
 
 ---
 
-## What Does the Neuromorphic Community Actually Want?
-
-To get a clearer picture, my colleagues [Matteo Saponati](https://matteosaponati.github.io/), [Melika Payvand](https://scholar.google.com/citations?user=O_fNxzIAAAAJ), and [Laura Kriener](https://scholar.google.com/citations?user=1X7XZUIAAAAJ) and I distributed a [survey](https://www.linkedin.com/posts/matteosaponati_neuromorphic-questionnaire-share-7318228604117508096-AVkk?utm_source=share&utm_medium=member_desktop&rcm=ACoAACj8vWkBo36oJfWRUh4_khoynkT9PwW-gaA) to the neuromorphic community, inspired by a similar effort in NeuroAI by [Luppi et al. (2024)](https://www.nature.com/articles/s41467-024-46631-y), guided by [Jascha Achterber](https://www.jachterberg.com/), one of the Cosyne NeuroAI workshop organizers.
-
-We asked two simple questions:
-
-1. How do you *objectively assess* the current importance of different disciplines in the neuromorphic field?
-2. If you could *change* the field, how much importance would you assign to each discipline?
-
-<p align="center">
-  <img src="/images/Blog_Cosyne2026/Survey_Neuroscience.jpg" width="100%" alt="Survey results on the perceived importance of disciplines in neuromorphic engineering"/>
-</p>
-<p align="center">
-  <em>Results from a survey distributed to the Neuromorphic Engineering community</a>.</em>
-</p>
-
-The result was striking: **neuroscience is the discipline people most want to see more of**. Even more than machine learning and computer science. The community sees biological inspiration as underutilised — not as something to be left behind.
-
-This raises a natural follow-up question: *how* should we draw inspiration from neuroscience? I argue the answer requires some structure.
-
----
-
 ## Three Levels of Biological Inspiration
 
-Not all biological inspiration is created equal. I find it useful to distinguish between three levels, which map onto different parts of the stack — from devices and circuits all the way up to applications and algorithms.
+I find it useful to distinguish between three levels, which map onto different parts of the stack of engineering intelligence — from devices and circuits all the way up to applications and algorithms.
 
 <p align="center">
   <img src="/images/Blog_Cosyne2026/Three_Level_BioInspiration.jpg" width="70%" alt="Three levels of biological inspiration: mechanical, system, and behavioral"/>
