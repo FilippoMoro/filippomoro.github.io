@@ -23,8 +23,6 @@ So what role does neuroscience play in this context? Is biological inspiration s
 
 As a neuromorphic engineer, I share some of these same tensions. Neuromorphic computing has historically drawn deep inspiration from biology, often at the level of mimicking individual neurons and synapses. But as the gap between neuromorphic hardware and state-of-the-art AI grows wider, it becomes worth asking: are we drawing the right kind of inspiration?
 
----
-
 ## Three Levels of Biological Inspiration
 
 I find it useful to distinguish between three levels, which map onto different parts of the stack of engineering intelligence — from devices and circuits all the way up to applications and algorithms.
@@ -52,7 +50,6 @@ The system level asks: *can biological organizational principles improve the fun
 
 The behavioral level draws inspiration from how brains *act*, rather than how they are built. This is closest to classical AI: designing systems that exhibit intelligent behaviors — perception, decision-making, creativity — observed in animals, without necessarily caring about the underlying substrate.
 
----
 
 ## Where Neuromorphic and NeuroAI Currently Live
 
@@ -60,7 +57,6 @@ Neuromorphic engineering has traditionally operated at the **mechanical level**,
 
 This is exactly the direction my lab — the [Emergent Intelligent Substrates (EIS) Lab](https://esl.epfl.ch/research/the-eis-lab/), led by Prof. Melika Payvand — has been pursuing.
 
----
 
 ## What We Work On
 
@@ -98,7 +94,6 @@ Moving up the hierarchy, we have been working on how biological system-level pri
 
 **GroHess** takes inspiration from adult hippocampal neurogenesis — the brain's ability to grow new neurons as a mechanism for continual learning — and implements a biologically-motivated artificial counterpart. Using information-geometry-based triggers (effective dimensionality and Fisher saturation metrics), the algorithm decides *when* and *where* to grow new neurons, and initialises them orthogonally to the existing representations to minimise interference. On both Split MNIST and Permuted MNIST, GroHess achieves better performance with smaller final models than static baselines.
 
----
 
 ## Looking Ahead: A Synergy Worth Pursuing
 
