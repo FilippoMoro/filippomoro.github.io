@@ -10,15 +10,15 @@ tags:
   - MRAM
 ---
 
-Memory technology has become the major battleground for integrated chip innovation. Our chips' integrated memory is ever-growing and now occupies a considerable portion of commercial silicon dies. While Static-Random-Access-Memory technology dominates the on-chip memory market, a recent [article](https://en.eeworld.com.cn/mp/Icbank/a155559.jspx) pointed out that SRAM's scaling - fueled so far by Moore's Law - is hitting a wall. TSMC's 3nm node only provides a minor 5% improvement in SRAM bitcell density compared to the 5nm node. So what is the future for on-chip memory?\\
+Memory technology has become the major battleground for integrated chip innovation. Our chips' integrated memory is ever-growing and now occupies a considerable portion of commercial silicon dies. While Static-Random-Access-Memory technology dominates the on-chip memory market, a recent [article](https://en.eeworld.com.cn/mp/Icbank/a155559.jspx) pointed out that SRAM's scaling - fueled so far by Moore's Law - is hitting a wall. TSMC's 3nm node only provides a minor 5% improvement in SRAM bitcell density compared to the 5nm node. So what is the future for on-chip memory?
 
 Here I explore the current on-chip memory landscape to extrapolate what the future might look like. More importantly, this article links to a [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0) where I gather data on all the memory devices featured in the plots. You can access this spreadsheet freely and will find all the information about the given memory devices, as well as a reference to the scientific paper in which they were featured.
 
 
 # Memory is all you need
-Memory technology has become the major battleground for integrated chip innovation. Our chips' integrated memory is ever-growing and now occupies a considerable portion of commercial silicon dies. While Static-Random-Access-Memory technology dominates the on-chip memory market, an article pointed out that SRAM's scaling - fueled so far by Moore's Law - is hitting a wall [1]. TSMC's 3nm node only provides a minor improvement (about 5%) in SRAM bitcell density compared to the 5nm node. So what is the future for on-chip memory?\\
+Memory technology has become the major battleground for integrated chip innovation. Our chips' integrated memory is ever-growing and now occupies a considerable portion of commercial silicon dies. While Static-Random-Access-Memory technology dominates the on-chip memory market, an article pointed out that SRAM's scaling - fueled so far by Moore's Law - is hitting a wall [1]. TSMC's 3nm node only provides a minor improvement (about 5%) in SRAM bitcell density compared to the 5nm node. So what is the future for on-chip memory?
 
-Some suggest that the shift from FinFET to Nanosheet transistor technology will propel the continuation of CMOS - and SRAM as well - scaling. Others highlight that alternative solutions exist: several emerging memory cells have been developed with the aim of going beyond standard CMOS and exploiting different physical phenomena to store information in memory cells. Among such innovative devices are Resistive-RAM (RRAMs) [2], Phase-Change-Memory (PCM) [3], Magnetic-RAM (MRAM) [4], Ferroelectric-RAM (FeRAM) [5], 2T-Gain-Cells [6], and eDRAM [7]. Although far less mature than SRAM, these devices (except for 2T-Gain-Cells and eDRAM) are non-volatile, thus promising energy efficiency, and can easily be integrated into the Back-End-of-Line (BEOL) of common CMOS processes, enabling high memory integration density.\\
+Some suggest that the shift from FinFET to Nanosheet transistor technology will propel the continuation of CMOS - and SRAM as well - scaling. Others highlight that alternative solutions exist: several emerging memory cells have been developed with the aim of going beyond standard CMOS and exploiting different physical phenomena to store information in memory cells. Among such innovative devices are Resistive-RAM (RRAMs) [2], Phase-Change-Memory (PCM) [3], Magnetic-RAM (MRAM) [4], Ferroelectric-RAM (FeRAM) [5], 2T-Gain-Cells [6], and eDRAM [7]. Although far less mature than SRAM, these devices (except for 2T-Gain-Cells and eDRAM) are non-volatile, thus promising energy efficiency, and can easily be integrated into the Back-End-of-Line (BEOL) of common CMOS processes, enabling high memory integration density.
 
 This article offers a bird's-eye view of the memory technology landscape, analyzing SRAM development down to the most recent nodes and assessing the performance of alternative emerging memory devices. Importantly, this article is inspired by this excellent review [paper](https://ieeexplore.ieee.org/abstract/document/10488872) from Prof. Shimeng Yu. I build on top of this article by finding relevant sources in the literature and providing my own opinions on the future of memory technology. You can access all the information contained in this article from this [spreadsheet](https://docs.google.com/spreadsheets/d/1qB0eTERsOAq3VRLizeE9IMj2wXXSUNgyxcXAxigXpuM/edit?gid=0#gid=0): it features scientific references and technical information on many memory devices.
 
@@ -134,7 +134,7 @@ This data, again, is reported in the shared [spreadsheet](https://docs.google.co
 <!-- It's important to note that in the early 2010's, performance of bulk CMOS was stagnating due to the limited electrostatic control over the channel. The semicoductor industry was quick to react and adopt a novel transistor architecture, the FinFET transitor, capable of a greater control over the channel and thus enable further scaling of feature sizes. More recently, it seems the FinFET has reached its limitations and SRAM size has slowed down. However, the industry has prepared an evolution of the FinFET transistor, the Nano-sheet-FET, which should drive the innovation of CMOS tecnology - and SRAM as well - in the coming years. -->
 As technology nodes become more advanced, the investments required to participate in the silicon scaling race grow exponentially. This is why the leading edge of SRAM scaling is carried out by essentially only one company nowadays, TSMC. Samsung follows closely, and Intel seems to be lagging a little behind.
 
-### Will SRAM scaling continue?
+## Will SRAM scaling continue?
 
 It seems like SRAM scaling is becoming harder and harder, and even TSMC flinched when launching its 3nm node, with the N3B specification offering only a 5% improvement over the N5 (5nm) node [1].
 However, the semiconductor industry still has some tricks up its sleeves, and it is ready to play them all to ensure the continuation of SRAM scaling.
@@ -144,9 +144,9 @@ However, the semiconductor industry still has some tricks up its sleeves, and it
 - **[Complementary 3D stacked logics](https://www.allaboutcircuits.com/news/from-finfets-to-cfets-imecs-plan-for-continued-transistor-scaling/)**: a potentially disruptive technology whereby p- and n-mos transistors can be stacked on top of each other, offering clear scaling advantages even compared to ultimate nanosheet transistors.
 
 
-## Alternative emerging memory technology
+# Alternative emerging memory technology
 
-### Embedded Non-Volatile Memory (eNVM)
+## Embedded Non-Volatile Memory (eNVM)
 As advanced technology nodes become ever more expensive and technically challenging, very few companies can afford to continue CMOS development. This leads researchers to explore novel memory devices that operate by exploiting different physical phenomena. This class of emerging memories has been discussed a lot, so how does it compare with SRAM? We'll now focus on emerging non-volatile memory (eNVM), which includes RRAM, MRAM, PCM, and FeRAM. (The latter is not mature enough to be compared in the following plots.)
 
 Scroll through the 2 figures!
@@ -176,7 +176,7 @@ What do we learn? SRAM and eNVM are apples and oranges. They do not belong to th
 
 <!-- #### Gain Cell (eDRAM) and embedded Flash -->
 
-## The future of memory technology
+# The future of memory technology
 
 <!-- SRAM is still too good, will stay there for cache L1 and L2 for sure
 MRAM as alternative for L3/4
@@ -189,11 +189,11 @@ However, transistor scaling will likely hit a point of diminishing returns at so
 - eNVM is *already* in the market, as embedded memory in commercial micro-controllers [9].
 - As L3 or L4 cache memory, MRAM might evolve into a serious candidate, especially when its non-volatility can be exploited in low stand-by power contexts.
 
-### Compute-In-Memory
+## Compute-In-Memory
 The most intriguing domain of application for eNVM is certainly Compute-in-Memory (CIM). While SRAM-based CIM is definitely high-performing, breaking the 1000 Tops/W mark per macro, eNVM-based CIM is also competitive [10]. eNVM features two important characteristics that are still not fully exploited in CIM, especially in low-power applications. While SRAM is the speed king and maximally efficient only at peak frequency, eNVM does not consume any static power (in theory!), and it is thus energy-efficient even at low frequency, a typical use case for edge applications. Also, RRAM and PCM store multiple bits per cell (typically 3 bits): this aspect is rarely exploited as it makes peripheral circuit design more complex (you need to design a compact ADC), but it might give an edge to eNVM in terms of CIM memory density.
 
-### Scaling in the third dimension
-But there is an important prospect to account for: 3D memory integration [11]. Nowadays, 3D integration is reserved for Flash memory, achieving more than 100 levels in the Back-End-of-Line and thus record-breaking memory density [12]. SRAM is very likely not scalable to 3D, as crystalline silicon cannot be deposited in the BEOL to form the six transistors required by SRAM. In contrast, eNVM is already BEOL-compatible. So can it scale to 3D? Yes, but it will be complicated. Some early research showed BEOL integration of RRAM and a carbon-nanotube selector [13], potentially scalable to multiple 3D layers. This paves the way toward ultra-high on-chip memory density.\\
+## Scaling in the third dimension
+But there is an important prospect to account for: 3D memory integration [11]. Nowadays, 3D integration is reserved for Flash memory, achieving more than 100 levels in the Back-End-of-Line and thus record-breaking memory density [12]. SRAM is very likely not scalable to 3D, as crystalline silicon cannot be deposited in the BEOL to form the six transistors required by SRAM. In contrast, eNVM is already BEOL-compatible. So can it scale to 3D? Yes, but it will be complicated. Some early research showed BEOL integration of RRAM and a carbon-nanotube selector [13], potentially scalable to multiple 3D layers. This paves the way toward ultra-high on-chip memory density.
 
 
 Thanks for reading! Please do not hesitate to provide feedback; you can find my contacts on the landing page of my website (provide links!).
