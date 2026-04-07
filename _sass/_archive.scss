@@ -10,8 +10,7 @@
   }
 
   @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
+    @include span(12 of 12);
   }
 
   a {
@@ -24,6 +23,12 @@
         box-shadow: 0 0 10px rgba(#000, 0.25);
       }
     }
+  }
+}
+
+.sidebar ~ .archive {
+  @include breakpoint($large) {
+    @include span(10 of 12 last);
   }
 }
 
@@ -90,6 +95,8 @@
    ========================================================================== */
 
 .list__item {
+  max-width: 800px;
+
   .page__meta {
     margin: 0 0 4px;
   }
