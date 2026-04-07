@@ -34,6 +34,18 @@ body { margin: 0; }
   background: #000;
 }
 
+@media (prefers-color-scheme: dark) {
+  ::-moz-selection {
+    color: #fff;
+    background: #1a4a8a;
+  }
+
+  ::selection {
+    color: #fff;
+    background: #1a4a8a;
+  }
+}
+
 /* Display HTML5 elements in IE6-9 and FF3 */
 
 article,
