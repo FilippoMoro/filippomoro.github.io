@@ -21,7 +21,7 @@ It is hard to ignore that AI is advancing at a pace that would have seemed impla
 
 So *what role does neuroscience play in this context?* Is biological inspiration still a useful guide for building intelligent systems, or has it become more of an aesthetic preference?
 
-As a neuromorphic engineer, I feel this growing **tensions**. Neuromorphic computing has historically drawn deep inspiration from biology, often at the level of mimicking individual neurons and synapses. But as the gap between neuromorphic hardware and state-of-the-art AI grows wider, it becomes worth asking: *are we drawing the right kind of inspiration?*
+As a neuromorphic engineer, I feel this growing **tension**. Neuromorphic computing has historically drawn deep inspiration from biology, often at the level of mimicking individual neurons and synapses. But as the gap between neuromorphic hardware and state-of-the-art AI grows wider, it becomes worth asking: *are we drawing the right kind of inspiration?*
 
 # Three Levels of Biological Inspiration
 
@@ -31,7 +31,7 @@ I find it useful to distinguish between three levels, which map onto different p
   <img src="/images/Blog_Cosyne2026/Three_Level_BioInspiration.jpg" width="70%" alt="Three levels of biological inspiration: mechanical, system, and behavioral"/>
 </p>
 <p align="center">
-  <em>Curtesy of Melika Payvand</a>.</em>
+  <em>Courtesy of Melika Payvand.</em>
 </p>
 
 ## 1. Mechanical Level
@@ -50,8 +50,10 @@ The system level asks: *can biological organizational principles improve the fun
 
 The behavioral level draws inspiration from how brains *act*, rather than how they are built. This is closest to classical AI: designing systems that exhibit intelligent behaviors such as perception, decision-making, and creativity, observed in animals, without necessarily caring about the underlying substrate.
 
+Notably, this level is as much about sensing as it is about computation: behavior, after all, emerges from the interaction with an environment. This makes behavioral inspiration particularly relevant for embodied AI, though not exclusively: systems like large language models draw on behavioral inspiration while operating purely in the symbolic domain.
 
-# Where Neuromorphic and NeuroAI Currently Live
+
+## Where Neuromorphic and NeuroAI Currently Live
 
 Neuromorphic engineering has traditionally operated at the **mechanical level**, while NeuroAI has worked mainly between the **system** and **behavioral** levels. But I believe both fields have much to gain from moving across this hierarchy, forming a synergy.
 
@@ -59,6 +61,8 @@ This is also the direction my lab — the [Emergent Intelligent Substrates (EIS)
 
 
 # What We Work On
+
+Let me show you what this looks like in practice across two of these levels.
 
 ## Mechanical Level: Dendritic Delays
 
@@ -68,12 +72,12 @@ Dendrites exhibit a rich repertoire of computational primitives, one of which is
   <img src="/images/Blog_Cosyne2026/DenRAM.png" width="90%" alt="DenRAM - Dendritic architecture with delays"/>
 </p>
 <p align="center">
-  <em>DenRAM mimics dendritic arbors with synaptic elements that delay and weigh input spikes, converging to an output Leaky-Integrate-and-Fire neuron.</a>.</em>
+  <em>DenRAM mimics dendritic arbors with synaptic elements that delay and weigh input spikes, converging to an output Leaky-Integrate-and-Fire neuron.</em>
 </p>
 
 In **DenRAM** ([D'Agostino, Moro et al., *Nature Communications* 2024](https://www.nature.com/articles/s41467-024-57108-x)), we built a neuromorphic hardware architecture that uses Resistive RAM (RRAM) to implement dendritic delays with ultra-low power consumption. Delay-based spiking networks turn out to be significantly more efficient than recurrent models: we demonstrated a **5× reduction in power** and up to a **35× reduction in memory footprint** on ECG anomaly detection and keyword spotting benchmarks.
 
-One limitation of DenRAM is that it does not train the delays explicitely. This motivated **DelGrad** ([Göltz, Weber, Kriener et al., *Nature Communications* 2025](https://www.nature.com/articles/s41467-025-57628-w)), an algorithm that derives exact, event-based gradients for both synaptic weights *and* delays in spiking networks. DelGrad is compatible with LIF neurons and has been validated on neuromorphic hardware (BrainScaleS), where training axonal delays reduces test error meaningfully even under the noise of analog hardware.
+One limitation of DenRAM is that it does not train the delays explicitly. This motivated **DelGrad** ([Göltz, Weber, Kriener et al., *Nature Communications* 2025](https://www.nature.com/articles/s41467-025-57628-w)), an algorithm that derives exact, event-based gradients for both synaptic weights *and* delays in spiking networks. DelGrad is compatible with LIF neurons and has been validated on neuromorphic hardware (BrainScaleS), where training axonal delays reduces test error meaningfully even under the noise of analog hardware.
 
 Together, DenRAM and DelGrad make the case that the mechanical richness of dendrites — specifically, their temporal structure — is a powerful computational resource.
 
@@ -85,7 +89,7 @@ Moving up the hierarchy, we have been working on how biological system-level pri
   <img src="/images/Blog_Cosyne2026/System_level.png" width="90%" alt="System-level of biological inspiration"/>
 </p>
 <p align="center">
-  <em>In the system-level of biological inspuration, we leverage machine-learning computational mechanisms in conjunction with high-level features of biological computations.</a>.</em>
+  <em>In the system-level of biological inspiration, we leverage machine-learning computational mechanisms in conjunction with high-level features of biological computations.</em>
 </p>
 
 **mGRADE** ([Torchet et al., *arXiv* 2025](https://arxiv.org/abs/2507.01829)) combines two ideas: the minimal gated recurrent unit (minGRU) for processing slow temporal dynamics, and dilated convolutions with learnable spacings (DCLS) for capturing fast temporal features. The result is a deep recurrent network with **heterogeneous memory** — inspired by the fact that brains exhibit heterogeneous strategies for memory formation. mGRADE achieves state-of-the-art performance on the Long Range Arena benchmark and on raw-audio keyword spotting, while being the only architecture in its class small enough to fit on common microcontrollers.
@@ -101,9 +105,9 @@ I believe the future of both fields lies in their convergence.
 
 **NeuroAI** would benefit from engaging more seriously with neuromorphic hardware. Energy-efficient substrates impose structure that may turn out to be a feature rather than a limitation: sparse connectivity, modular networks and local learning rules are all biologically motivated and increasingly attractive from an engineering standpoint.
 
-**Neuromorphic engineering** should to break free from its focus on the mechanical level. The most impactful near-term opportunities may lie in the system level: using the organizational principles of biological brains — hierarchy of time-scales, heterogeneous dynamics, modular connectivity — to build systems that are simultaneously more efficient and more functional.
+**Neuromorphic engineering** should break free from its focus on the mechanical level. The most impactful near-term opportunities may lie in the system level: using the organizational principles of biological brains — hierarchy of time-scales, heterogeneous dynamics, modular connectivity — to build systems that are simultaneously more efficient and more functional.
 
-The question is how to make it happen. I hope that conversations like the one we had at this workshop are a step in that direction.
+The next step is to build systems that are neuromorphic in substrate, biologically-organized at the system-level, while leveraging the powerful computational tools of machine learning. I think we are closer to that than it might seem.
 
 ---
 
