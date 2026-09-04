@@ -17,12 +17,25 @@ In the business of building complex electronic circuits it is fundamental to be 
 
 ### *News*
 
-- Sept 10, 2026 - Talk at the [ZNZ Symposium](https://www.neuroscience.uzh.ch/en/symposium.html) 2026
-
-- Sept 1, 2026 - Starting as an [SNSF Ambizione](https://www.news.uzh.ch/en/articles/news/2026/snsf-ambizione0.html) fellow
-
-- July 13, 2026 - [Paper](https://iopscience.iop.org/article/10.1088/2634-4386/ae8295/meta) accepted in the "Neuromorphic Rising Stars" IOP NCE collection
-
-- May 26, 2026 - Leading a work-group on adaptive RL at the [Capocaccia](https://capocaccia.cc/) workshop
-
-- March 16, 2026 - Presenting at the [Cosyne NeuroAI](https://sites.google.com/view/cosyne-neuroai/) workshop
+<div class="news-list">
+  <div class="news-item">
+    <time class="news-date" datetime="2026-09-10">Sep 10, 2026</time>
+    <div>Talk at the <a href="https://www.neuroscience.uzh.ch/en/symposium.html">ZNZ Symposium</a> 2026</div>
+  </div>
+  <div class="news-item">
+    <time class="news-date" datetime="2026-09-01">Sep 1, 2026</time>
+    <div>Starting as an <a href="https://www.news.uzh.ch/en/articles/news/2026/snsf-ambizione0.html">SNSF Ambizione</a> fellow</div>
+  </div>
+  <div class="news-item">
+    <time class="news-date" datetime="2026-07-13">Jul 13, 2026</time>
+    <div><a href="https://iopscience.iop.org/article/10.1088/2634-4386/ae8295/meta">Paper</a> accepted in the “Neuromorphic Rising Stars” IOP NCE collection</div>
+  </div>
+  <div class="news-item">
+    <time class="news-date" datetime="2026-05-26">May 26, 2026</time>
+    <div>Leading a work group on adaptive RL at the <a href="https://capocaccia.cc/">Capocaccia</a> workshop</div>
+  </div>
+  <div class="news-item">
+    <time class="news-date" datetime="2026-03-16">Mar 16, 2026</time>
+    <div>Presenting at the <a href="https://sites.google.com/view/cosyne-neuroai/">Cosyne NeuroAI</a> workshop</div>
+  </div>
+</div>

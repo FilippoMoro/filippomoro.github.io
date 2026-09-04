@@ -117,6 +117,24 @@
   }
 }
 
+.news-list {
+  margin-bottom: $indent-var;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 7em minmax(0, 1fr);
+  gap: 1em;
+  padding: 0.65em 0;
+  border-bottom: 1px solid $border-color;
+}
+
+.news-date {
+  color: $gray;
+  font-family: $sans-serif;
+  white-space: nowrap;
+}
+
 .page__hero {
   position: relative;
   margin-bottom: 2em;

@@ -78,6 +78,14 @@ html[data-theme="dark"] .page__taxonomy-item {
   border-color: #3a4758;
 }
 
+html[data-theme="dark"] .news-item {
+  border-color: #334152;
+}
+
+html[data-theme="dark"] .news-date {
+  color: #9fafc0;
+}
+
 html[data-theme="dark"] .page__comments-form {
   background: #1d2530;
 }
@@ -87,4 +95,3 @@ html[data-theme="dark"] .page__footer {
   border-top-color: #2f3a48;
   color: #9fafc0;
 }
-
