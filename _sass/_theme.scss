@@ -86,6 +86,19 @@ html[data-theme="dark"] .news-date {
   color: #9fafc0;
 }
 
+html[data-theme="dark"] .publication-card {
+  background-color: #181f29;
+  border-color: #334152;
+}
+
+html[data-theme="dark"] .publication-card:hover {
+  border-color: #52657a;
+}
+
+html[data-theme="dark"] .publication-card__meta {
+  color: #9fafc0;
+}
+
 html[data-theme="dark"] .page__comments-form {
   background: #1d2530;
 }

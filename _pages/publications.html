@@ -3,10 +3,11 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: false
+archive_class: publications-archive
 ---
 
 {% if site.author.googlescholar %}
-  <p>This is only a selected collection of my papers, organized by venue (Journal or Conference).</p>
+  <p>This is a selected collection of my papers, organized by venue (Journal or Conference).</p>
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
@@ -21,16 +22,15 @@ author_profile: false
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
+        <h2 class="publication-list__heading">{{ category[1].title }}</h2>
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% include archive-single.html publication_card=true %}
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    {% include archive-single.html publication_card=true %}
   {% endfor %}
 {% endif %}
-
 
